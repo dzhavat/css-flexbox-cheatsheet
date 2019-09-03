@@ -11,6 +11,7 @@
 		"Programming Languages"
 	],
 	"license": "MIT",
+	"icon": "images/icon.png",
 	"main": "./out/extension.js",
 	"contributes": {
     "commands": [
