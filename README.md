@@ -28,4 +28,4 @@ Works with the following file types:
 
 ## Credit
 
-The cheatsheet in this extension is using the excellent [Flexbox Cheatsheet](https://darekkay.com/dev/flexbox-cheatsheet.html) by [Darek Kay](https://darekkay.com/).
+The cheatsheet in this extension is based on the excellent [Flexbox Cheatsheet](https://darekkay.com/dev/flexbox-cheatsheet.html) by [Darek Kay](https://darekkay.com/).
