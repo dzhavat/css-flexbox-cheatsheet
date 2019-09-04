@@ -1,65 +1,31 @@
-# css-flexbox-cheatsheet README
+# CSS Flexbox Cheatsheet
 
-This is the README for your extension "css-flexbox-cheatsheet". After writing up a brief description, we recommend including the following sections.
+VS Code extension that lets you open a flexbox cheatsheet directly in the editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+The cheatsheet can be opened in two ways: 
 
-For example if there is an image subfolder under your extension project workspace:
+* By pressing `Ctrl+Shift+P` (Win) / `Cmd+Shift+P` (Mac) and searching for the `Open Flexbox Cheatsheet` command.
+* Hovering any `display: flex` declaration and clicking the `Open Flexbox Cheatsheet` link in the popup.
 
-\!\[feature X\]\(images/feature-x.png\)
+Works with the following file types:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+* CSS
+* Less
+* Sass
+* Scss
 
-## Requirements
+## Demo
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+#### Using the `Open Flexbox Cheatsheet` command
 
-## Extension Settings
+![demo](images/demo-command.gif)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+#### Clicking the `Open Flexbox Cheatsheet` link on hover
 
-For example:
+![demo](images/demo-hover.gif)
 
-This extension contributes the following settings:
+## Credit
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+The cheatsheet in this extension is using the excellent [Flexbox Cheatsheet](https://darekkay.com/dev/flexbox-cheatsheet.html) by [Darek Kay](https://darekkay.com/).
