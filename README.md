@@ -1,4 +1,4 @@
-# CSS Flexbox Cheatsheet
+# CSS Flexbox Cheatsheet ([link](https://marketplace.visualstudio.com/items?itemName=dzhavat.css-flexbox-cheatsheet))
 
 VS Code extension that lets you open a flexbox cheatsheet directly in the editor.
 
