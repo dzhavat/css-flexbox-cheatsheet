@@ -1320,6 +1320,8 @@ export function getWebviewContent() {
 				<li><a href="https://philipwalton.github.io/solved-by-flexbox/" target="_blank" rel="noopener">Solved by Flexbox</a></li>
 				<li><a href="http://www.flexboxpatterns.com/home" target="_blank" rel="noopener">Flexbox Patterns</a></li>
 				<li><a href="https://github.com/philipwalton/flexbugs" target="_blank" rel="noopener">Flexbugs</a> - Flexbox issues</li>
+				<li><a href="https://flexboxfroggy.com" target="_blank" rel="noopener">Flexbox Froggy</a></li>
+				<li><a href="https://mastery.games/p/flexbox-zombies" target="_blank" rel="noopener">Flexbox Zombies</a></li>
 			</ul>
 		</div>
 	</main>	
