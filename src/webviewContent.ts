@@ -523,6 +523,34 @@ export function getWebviewContent() {
 									</mask>
 									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
+										<g transform="translate(3.000000, 8.000000)">
+											<rect id="Rectangle-16" x="2.5" y="0" width="5" height="5"></rect>
+											<rect id="Rectangle-17" x="13" y="0" width="5" height="5"></rect>
+											<rect id="Rectangle-18" x="23.5" y="0" width="5" height="5"></rect>
+										</g>
+									</g>
+									<path
+											d="M0.00543854944,1.99456143 L0.00543854944,19.0054385 C0.00543854944,20.1070044 0.907782299,21 2,21 L35.0054385,21 C36.1070044,21 37,20.0976562 37,19.0054385 L37,1.99456143 C37,0.892995562 36.0976562,-1.67638062e-08 35.0054385,-1.67638062e-08 L2,-1.67638062e-08 C0.898434128,-1.67638062e-08 0.00543854944,0.902343733 0.00543854944,1.99456143 Z M35.0054385,0.999999983 C35.5493223,0.999999983 36,1.44922332 36,1.99456143 L36,19.0054385 C36,19.5493223 35.5507767,20 35.0054385,20 L1.99456145,20 C1.45067766,20 1,19.5507766 1,19.0054385 L1,1.99456142 C1,1.45067762 1.44922334,0.999999966 1.99456145,0.999999966 L35.0054385,0.999999983 Z"
+											id="selector" fill="#A6E22D" mask="url(#mask-2)"></path>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div class="row">
+					<div>justify-content: space-evenly;</div>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<defs>
+							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
+						</defs>
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="container" transform="translate(-27.000000, -507.000000)">
+								<g id="justify-content_space-evenly" transform="translate(27.000000, 507.000000)">
+									<mask id="mask-2" fill="white">
+										<use xlink:href="#path-1"></use>
+									</mask>
+									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(6.000000, 8.000000)">
 											<rect id="Rectangle-16" x="0" y="0" width="5" height="5"></rect>
 											<rect id="Rectangle-17" x="10" y="0" width="5" height="5"></rect>
