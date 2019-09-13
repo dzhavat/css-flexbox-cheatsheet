@@ -85,8 +85,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank" rel="noopener">display</a>: flex;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>display_flex</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -111,8 +110,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>display: inline-flex;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>display_inline-flex</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -157,8 +155,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction" target="_blank" rel="noopener">flex-direction</a>: <span class="default">row</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-direction_row</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -189,8 +186,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>flex-direction: row-reverse;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-direction_row-reverse</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -221,8 +217,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>flex-direction: column;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-direction_column</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -252,8 +247,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>flex-direction: column-reverse;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-direction_column-reverse</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -289,8 +283,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap" target="_blank" rel="noopener">flex-wrap</a>: <span class="default">nowrap</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-wrap_nowrap</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -318,8 +311,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>flex-wrap: wrap;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-wrap_wrap</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -360,8 +352,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>flex-wrap: wrap-reverse;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-wrap_wrap-reverse</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -407,8 +398,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank" rel="noopener">justify-content</a>: <span class="default">flex-start</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>justify-content_flex-start</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -436,8 +426,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>justify-content: center;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>justify-content_center</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -465,8 +454,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>justify-content: flex-end;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>justify-content_flex-end</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -494,8 +482,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>justify-content: space-between;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>justify-content_space-between</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -524,8 +511,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>justify-content: space-around;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>justify-content_space-around</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -559,8 +545,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank" rel="noopener">align-items</a>: <span class="default">stretch</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-items_stretch</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -588,8 +573,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-items: flex-start;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-items_flex-start</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -617,8 +601,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-items: center;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-items_center</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -646,8 +629,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-items: flex-end;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-items_flex-end</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -675,8 +657,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-items: baseline;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-items_baseline</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -707,8 +688,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" target="_blank" rel="noopener">align-content</a>: <span class="default">stretch</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-content_stretch</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -741,8 +721,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-content: flex-start;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-content_flex-start</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -775,8 +754,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-content: center;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-content_center</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -809,8 +787,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-content: flex-end;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-content_flex-end</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -843,8 +820,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-content: space-between;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-content_space-between</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -877,8 +853,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-content: space-around;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-content_space-around</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -921,8 +896,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order" target="_blank" rel="noopener">order</a>: <span class="default">0</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>order_0</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -974,8 +948,7 @@ export function getWebviewContent() {
 					<div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank" rel="noopener">flex-grow</a>:
 						<span class="default">0</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-grow_0</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1004,8 +977,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>flex-grow: 1;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-grow_1</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1039,8 +1011,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank" rel="noopener">flex-shrink</a>: <span class="default">0</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-shrink_0</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1072,8 +1043,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>flex-shrink: 1;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>flex-shrink_1</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1120,8 +1090,7 @@ export function getWebviewContent() {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self" target="_blank" rel="noopener">align-self</a>: <span class="default">auto</span>;
 					</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-self_auto</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1150,8 +1119,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-self: flex-start;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-self_flex-start</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1183,8 +1151,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-self: center;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-self_center</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1215,8 +1182,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-self: flex-end;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-self_flex-end</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1248,8 +1214,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-self: baseline;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-self_baseline</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
@@ -1278,8 +1243,7 @@ export function getWebviewContent() {
 				</div>
 				<div class="row">
 					<div>align-self: stretch;</div>
-					<svg width="74px" height="42px" viewBox="0 0 37 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>align-self_stretch</title>
+					<svg width="74px" height="42px" viewBox="0 0 37 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<rect id="path-1" x="0" y="0" width="37" height="21"></rect>
 						</defs>
