@@ -1,5 +1,9 @@
 # Change Log
 
+## Unreleased
+
+- Add icon before `flex` value
+
 ## 1.0.0 (2019-09-04)
 
 - Initial release
