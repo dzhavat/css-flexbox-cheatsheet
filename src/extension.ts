@@ -1,4 +1,6 @@
 import * as vscode from 'vscode';
+import * as path from 'path';
+
 import { getWebviewContent } from './webviewContent';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -7,10 +9,16 @@ export function activate(context: vscode.ExtensionContext) {
 		const panel = vscode.window.createWebviewPanel(
 			'flexboxCheatsheet',
 			'Flexbox Cheatsheet',
-			vscode.ViewColumn.Beside
+			vscode.ViewColumn.Beside, {
+				localResourceRoots: [vscode.Uri.file(path.join(context.extensionPath, 'style'))]
+			}
 		);
 
-		panel.webview.html = getWebviewContent();
+		const styleSrc = vscode.Uri.file(
+			path.join(context.extensionPath, 'style', 'custom.css')
+		).with({ scheme: 'vscode-resource' });
+
+		panel.webview.html = getWebviewContent(styleSrc);
 	});
 
 	const hoverProvider: vscode.HoverProvider = {
