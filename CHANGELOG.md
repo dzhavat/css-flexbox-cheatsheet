@@ -2,9 +2,13 @@
 
 ## Unreleased
 
+#### Feature
+
+- Add icon before `flex` value
+
 #### Security
 
-- Fix: Add [Content security policy](https://code.visualstudio.com/api/extension-guides/webview#content-security-policy)
+- Add [Content security policy](https://code.visualstudio.com/api/extension-guides/webview#content-security-policy)
 
 ## 1.0.0 (2019-09-04)
 
