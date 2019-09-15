@@ -54,7 +54,9 @@ export function activate(context: vscode.ExtensionContext) {
 			editor => editor.document.uri === event.document.uri
 		)[0];
 
-		decorate(openEditor);
+		if (openEditor && supportedFiles.includes(openEditor.document.languageId)) {
+			decorate(openEditor);
+		}
 	});
 
 	const hoverProvider: vscode.HoverProvider = {
