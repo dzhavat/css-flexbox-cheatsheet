@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 	decorationType = vscode.window.createTextEditorDecorationType({
 		after: {
 			margin: '0 0.2rem 0 0',
-			width: '13px'
+			width: '.8125rem'
 		},
 		dark: {
 			after: {
