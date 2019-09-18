@@ -2,9 +2,10 @@
 
 ## 1.1.0 (2019-09-16)
 
-#### Feature
+#### Features
 
 - Add icon before `flex` value
+- Add `space-evently` to `justify-content`
 
 #### Security
 
