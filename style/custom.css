@@ -1,11 +1,8 @@
 body {
-  background-color: white;
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--vscode-editor-font-family);
 }
 
 a {
-  color: #005aff;
   text-decoration: none;
 }
 
@@ -17,38 +14,32 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: auto;
-  max-width: 1300px;
 }
 
 h1, h2 {
   padding-bottom: 20px;
-  text-align: center
+  text-align: center;
 }
 
 .container {
-  width: 100%;
-  max-width: 350px;
   margin: 20px;
+  width: 26rem;
 }
 
 .group {
-  width: 100%;
-  margin-bottom: 5px;
-  padding-bottom: 3px;
   border-bottom: 1px solid #ddd;
+  padding: 8px 0;
 }
 
 .row {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 2px;
-  font-family: Consolas, monospace;
-  font-size: 14px;
   min-height: 42px;
+}
+
+.row + .row {
+  margin-top: 8px;
 }
 
 .default {
@@ -56,6 +47,6 @@ h1, h2 {
 }
 
 .shorthand-hint {
-  font-size: 10px;
   color: #797979;
+  font-size: 12px;
 }
