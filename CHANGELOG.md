@@ -6,6 +6,7 @@
 
 - Add icon before `flex` value
 - Add `space-evently` to `justify-content`
+- Add two more links to resources
 
 #### Security
 
