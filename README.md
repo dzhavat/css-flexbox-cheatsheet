@@ -20,11 +20,15 @@ Works with the following file types:
 
 #### Using the `Open Flexbox Cheatsheet` command
 
-![demo](images/demo-command.gif)
+![Demo using the command](images/demo-command.gif)
 
 #### Clicking the `Open Flexbox Cheatsheet` link on hover
 
-![demo](images/demo-hover.gif)
+![Demo using hover](images/demo-hover.gif)
+
+#### Changing themes
+
+![Demo changing themes](images/demo-theme.gif)
 
 ## Credit
 
