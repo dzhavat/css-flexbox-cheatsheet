@@ -1,13 +1,13 @@
 # Change Log
 
-## 1.2.0 (2019-09-23)
+## 1.2.0 (23-09-2019)
 
 #### Features
 
 - Adjust colors based on the selected theme
 - Use the user’s preferred font family
 
-## 1.1.0 (2019-09-16)
+## 1.1.0 (16-09-2019)
 
 #### Features
 
@@ -19,7 +19,7 @@
 
 - Add [Content security policy](https://code.visualstudio.com/api/extension-guides/webview#content-security-policy)
 
-## 1.0.0 (2019-09-04)
+## 1.0.0 (04-09-2019)
 
 - Initial release
 
