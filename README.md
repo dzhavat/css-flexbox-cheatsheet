@@ -16,7 +16,7 @@ Works with the following file types:
 * Sass
 * Scss
 
-The colors of the cheatsheet automatically adapt to the selected theme.
+The colors of the cheatsheet automatically adapt to the selected theme. The font is based on the user’s preferred font family.
 
 ## Demo
 
