@@ -37,7 +37,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<rect id="element" x="0" y="0" width="37" height="1"></rect>
 										<rect id="element" x="0" y="20" width="37" height="1"></rect>
@@ -62,7 +62,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(1.000000, 8.000000)" id="element">
 											<rect x="0" y="8" width="36" height="1"></rect>
@@ -107,7 +107,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<polygon id="value" fill="#66D9EF" mask="url(#mask-2)"
 													 points="4.5 14 4 14 4 13 4.5 13 28 13 28 10 32 13.5 28 17 28 14"></polygon>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
@@ -138,7 +138,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<polygon id="value" fill="#66D9EF" mask="url(#mask-2)"
 													 points="32.5 14 33 14 33 13 32.5 13 9 13 9 10 5 13.5 9 17 9 14"></polygon>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
@@ -169,7 +169,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<polygon id="value" fill="#66D9EF" mask="url(#mask-2)"
 													 points="29 3.5 29 3 30 3 30 3.5 30 14 33 14 29.5 18 26 14 29 14"></polygon>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
@@ -199,7 +199,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<polygon id="value" fill="#66D9EF" mask="url(#mask-2)"
 													 points="29 17.5 29 18 30 18 30 17.5 30 7 33 7 29.5 3 26 7 29 7"></polygon>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
@@ -235,7 +235,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 3.000000)">
 											<rect id="Rectangle-12" x="10" y="0" width="16" height="5"></rect>
@@ -263,7 +263,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<path d="M13,13.75 L13,13 L18,13 L18,18 L13,18 L13,17.25 L15,15.5 L13,13.75 Z"
 												id="Combined-Shape" fill="#75715E" opacity="0.800000012"
 												mask="url(#mask-2)"></path>
@@ -304,7 +304,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(11.000000, 2.000000)">
 											<rect id="Rectangle-12" opacity="0.300000012" x="1" y="11" width="5" height="5"></rect>
@@ -350,7 +350,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(3.000000, 8.000000)">
 											<rect id="Rectangle-16" x="0" y="0" width="5" height="5"></rect>
@@ -378,7 +378,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(10.000000, 8.000000)">
 											<rect id="Rectangle-16" x="0" y="0" width="5" height="5"></rect>
@@ -406,7 +406,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(17.000000, 8.000000)">
 											<rect id="Rectangle-16" x="0" y="0" width="5" height="5"></rect>
@@ -435,7 +435,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(3.000000, 8.000000)">
 											<rect id="Rectangle-16" x="0" y="0" width="5" height="5"></rect>
@@ -463,7 +463,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(3.000000, 8.000000)">
 											<rect id="Rectangle-16" x="2.5" y="0" width="5" height="5"></rect>
@@ -491,7 +491,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(6.000000, 8.000000)">
 											<rect id="Rectangle-16" x="0" y="0" width="5" height="5"></rect>
@@ -525,7 +525,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 2.000000)">
 											<rect id="Rectangle-13" x="10" y="0" width="16" height="17"></rect>
@@ -553,7 +553,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 2.000000)">
 											<rect id="Rectangle-13" x="10" y="0" width="16" height="7"></rect>
@@ -581,7 +581,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 7.000000)">
 											<rect id="Rectangle-13" x="10" y="0" width="16" height="7"></rect>
@@ -609,7 +609,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 12.000000)">
 											<rect id="Rectangle-13" x="10" y="0" width="16" height="7"></rect>
@@ -637,7 +637,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<path
 											d="M12,8 L12,6 L28,6 L28,8 L12,8 Z M12,11 L12,16 L28,16 L28,11 L12,11 Z M2,9 L2,5 L11,5 L11,8 L2,8 L2,9 Z M29,8 L29,6 L35,6 L35,13 L29,13 L29,11 L35,11 L35,8 L29,8 Z"
 											id="Combined-Shape" fill="#75715E" mask="url(#mask-2)"></path>
@@ -668,7 +668,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 2.000000)">
 											<rect id="Rectangle-15" x="0" y="12" width="9" height="5"></rect>
@@ -701,7 +701,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 2.000000)">
 											<rect id="Rectangle-13" x="10" y="0" width="16" height="2"></rect>
@@ -734,7 +734,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<path
 											d="M0.00543854944,1.99456143 L0.00543854944,19.0054385 C0.00543854944,20.1070044 0.907782299,21 2,21 L35.0054385,21 C36.1070044,21 37,20.0976562 37,19.0054385 L37,1.99456143 C37,0.892995562 36.0976562,-1.67638062e-08 35.0054385,-1.67638062e-08 L2,-1.67638062e-08 C0.898434128,-1.67638062e-08 0.00543854944,0.902343733 0.00543854944,1.99456143 Z M35.0054385,0.999999983 C35.5493223,0.999999983 36,1.44922332 36,1.99456143 L36,19.0054385 C36,19.5493223 35.5507767,20 35.0054385,20 L1.99456145,20 C1.45067766,20 1,19.5507766 1,19.0054385 L1,1.99456142 C1,1.45067762 1.44922334,0.999999966 1.99456145,0.999999966 L35.0054385,0.999999983 Z"
 											id="selector" fill="#A6E22D" mask="url(#mask-2)"></path>
@@ -767,7 +767,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 11.000000)">
 											<rect id="Rectangle-13" x="10" y="0" width="16" height="2"></rect>
@@ -800,7 +800,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 2.000000)">
 											<rect id="Rectangle-15" x="0" y="15" width="9" height="2"></rect>
@@ -833,7 +833,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<g transform="translate(2.000000, 4.000000)">
 											<rect id="Rectangle-15" x="0" y="10" width="9" height="2"></rect>
@@ -876,7 +876,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)">
 										<path
 												d="M2,2.99895656 L2,6.00104344 C2,6.55275191 2.4463114,7 2.99754465,7 L10.0024554,7 C10.553384,7 11,6.55733967 11,6.00104344 L11,2.99895656 C11,2.44724809 10.5536886,2 10.0024554,2 L2.99754465,2 C2.44661595,2 2,2.44266033 2,2.99895656 Z M10.0024554,3 C10.0009345,3 10,6.00104344 10,6.00104344 C10,6.00307541 2.99754465,6 2.99754465,6 C2.99906549,6 3,2.99895656 3,2.99895656 C3,2.99692459 10.0024554,3 10.0024554,3 Z"
@@ -928,7 +928,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M31,2.9999602 L31,18.0000398 C31,18.5523026 31.4433532,19 32.0093689,19 L33.9906311,19 C34.5480902,19 35,18.5452911 35,18.0000398 L35,2.9999602 C35,2.44769743 34.5566468,2 33.9906311,2 L32.0093689,2 C31.4519098,2 31,2.45470893 31,2.9999602 Z M33.9906311,3 C34.0021871,3 34,2.99782053 34,2.9999602 L34,18.0000398 C34,17.9944105 33.9943851,18 33.9906311,18 L32.0093689,18 C31.9978129,18 32,18.0021795 32,18.0000398 L32,2.9999602 C32,3.00558949 32.0056149,3 32.0093689,3 L33.9906311,3 Z M26,2.9999602 L26,18.0000398 C26,18.5523026 26.4433532,19 27.0093689,19 L28.9906311,19 C29.5480902,19 30,18.5452911 30,18.0000398 L30,2.9999602 C30,2.44769743 29.5566468,2 28.9906311,2 L27.0093689,2 C26.4519098,2 26,2.45470893 26,2.9999602 Z M28.9906311,3 C29.0021871,3 29,2.99782053 29,2.9999602 L29,18.0000398 C29,17.9944105 28.9943851,18 28.9906311,18 L27.0093689,18 C26.9978129,18 27,18.0021795 27,18.0000398 L27,2.9999602 C27,3.00558949 27.0056149,3 27.0093689,3 L28.9906311,3 Z"
@@ -957,7 +957,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M31,2.9999602 L31,18.0000398 C31,18.5523026 31.4433532,19 32.0093689,19 L33.9906311,19 C34.5480902,19 35,18.5452911 35,18.0000398 L35,2.9999602 C35,2.44769743 34.5566468,2 33.9906311,2 L32.0093689,2 C31.4519098,2 31,2.45470893 31,2.9999602 Z M33.9906311,3 C34.0021871,3 34,2.99782053 34,2.9999602 L34,18.0000398 C34,17.9944105 33.9943851,18 33.9906311,18 L32.0093689,18 C31.9978129,18 32,18.0021795 32,18.0000398 L32,2.9999602 C32,3.00558949 32.0056149,3 32.0093689,3 L33.9906311,3 Z M26,2.9999602 L26,18.0000398 C26,18.5523026 26.4433532,19 27.0093689,19 L28.9906311,19 C29.5480902,19 30,18.5452911 30,18.0000398 L30,2.9999602 C30,2.44769743 29.5566468,2 28.9906311,2 L27.0093689,2 C26.4519098,2 26,2.45470893 26,2.9999602 Z M28.9906311,3 C29.0021871,3 29,2.99782053 29,2.9999602 L29,18.0000398 C29,17.9944105 28.9943851,18 28.9906311,18 L27.0093689,18 C26.9978129,18 27,18.0021795 27,18.0000398 L27,2.9999602 C27,3.00558949 27.0056149,3 27.0093689,3 L28.9906311,3 Z"
@@ -991,7 +991,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M24,2.9999602 L24,18.0000398 C24,18.5523026 24.4433532,19 25.0093689,19 L27.9906311,19 C28.5480902,19 29,18.5452911 29,18.0000398 L29,2.9999602 C29,2.44769743 28.5566468,2 27.9906311,2 L25.0093689,2 C24.4519098,2 24,2.45470893 24,2.9999602 Z M27.9857009,3 C28.003033,3 27.9997527,2.99782053 27.9997527,2.9999602 L27.9997527,18.0000398 C27.9997527,17.9944105 27.9913313,18 27.9857009,18 L25.0141342,18 C24.9968021,18 25.0000824,18.0021795 25.0000824,18.0000398 L25.0000824,2.9999602 C25.0000824,3.00558949 25.0085038,3 25.0141342,3 L27.9857009,3 Z"
@@ -1023,7 +1023,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M24,2.9999602 L24,18.0000398 C24,18.5523026 24.4433532,19 25.0093689,19 L27.9906311,19 C28.5480902,19 29,18.5452911 29,18.0000398 L29,2.9999602 C29,2.44769743 28.5566468,2 27.9906311,2 L25.0093689,2 C24.4519098,2 24,2.45470893 24,2.9999602 Z M27.9857009,3 C28.003033,3 27.9997527,2.99782053 27.9997527,2.9999602 L27.9997527,18.0000398 C27.9997527,17.9944105 27.9913313,18 27.9857009,18 L25.0141342,18 C24.9968021,18 25.0000824,18.0021795 25.0000824,18.0000398 L25.0000824,2.9999602 C25.0000824,3.00558949 25.0085038,3 25.0141342,3 L27.9857009,3 Z"
@@ -1070,7 +1070,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M2,2.99895656 L2,4.00104344 C2,4.55275191 2.4463114,5 2.99754465,5 L10.0024554,5 C10.553384,5 11,4.55733967 11,4.00104344 L11,2.99895656 C11,2.44724809 10.5536886,2 10.0024554,2 L2.99754465,2 C2.44661595,2 2,2.44266033 2,2.99895656 Z M10.0024554,3 C10.0009345,3 10,4.00104344 10,4.00104344 C10,4.00307541 2.99754465,4 2.99754465,4 C2.99906549,4 3,2.99895656 3,2.99895656 C3,2.99692459 10.0024554,3 10.0024554,3 Z"
@@ -1099,7 +1099,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M2,2.99895656 L2,4.00104344 C2,4.55275191 2.4463114,5 2.99754465,5 L10.0024554,5 C10.553384,5 11,4.55733967 11,4.00104344 L11,2.99895656 C11,2.44724809 10.5536886,2 10.0024554,2 L2.99754465,2 C2.44661595,2 2,2.44266033 2,2.99895656 Z M10.0024554,3 C10.0009345,3 10,4.00104344 10,4.00104344 C10,4.00307541 2.99754465,4 2.99754465,4 C2.99906549,4 3,2.99895656 3,2.99895656 C3,2.99692459 10.0024554,3 10.0024554,3 Z"
@@ -1131,7 +1131,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="Rectangle-26" fill="#fff" xlink:href="#path-1"></use>
+									<use id="Rectangle-26" xlink:href="#path-1"></use>
 									<g id="selector" mask="url(#mask-2)">
 										<g transform="translate(2.000000, 2.000000)">
 											<path
@@ -1162,7 +1162,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M2,2.99895656 L2,4.00104344 C2,4.55275191 2.4463114,5 2.99754465,5 L10.0024554,5 C10.553384,5 11,4.55733967 11,4.00104344 L11,2.99895656 C11,2.44724809 10.5536886,2 10.0024554,2 L2.99754465,2 C2.44661595,2 2,2.44266033 2,2.99895656 Z M10.0024554,3 C10.0009345,3 10,4.00104344 10,4.00104344 C10,4.00307541 2.99754465,4 2.99754465,4 C2.99906549,4 3,2.99895656 3,2.99895656 C3,2.99692459 10.0024554,3 10.0024554,3 Z"
@@ -1194,7 +1194,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<path
 											d="M2,2.99895656 L2,4.00104344 C2,4.55275191 2.4463114,5 2.99754465,5 L10.0024554,5 C10.553384,5 11,4.55733967 11,4.00104344 L11,2.99895656 C11,2.44724809 10.5536886,2 10.0024554,2 L2.99754465,2 C2.44661595,2 2,2.44266033 2,2.99895656 Z M10.0024554,3 C10.0009345,3 10,4.00104344 10,4.00104344 C10,4.00307541 2.99754465,4 2.99754465,4 C2.99906549,4 3,2.99895656 3,2.99895656 C3,2.99692459 10.0024554,3 10.0024554,3 Z"
 											id="Rectangle-14" fill="#75715E" mask="url(#mask-2)"></path>
@@ -1223,7 +1223,7 @@ export function getWebviewContent(styleSrc: Uri) {
 									<mask id="mask-2" fill="white">
 										<use xlink:href="#path-1"></use>
 									</mask>
-									<use id="mask" fill="#fff" xlink:href="#path-1"></use>
+									<use id="mask" xlink:href="#path-1"></use>
 									<g id="elements" mask="url(#mask-2)" fill="#75715E">
 										<path
 												d="M2,2.99895656 L2,4.00104344 C2,4.55275191 2.4463114,5 2.99754465,5 L10.0024554,5 C10.553384,5 11,4.55733967 11,4.00104344 L11,2.99895656 C11,2.44724809 10.5536886,2 10.0024554,2 L2.99754465,2 C2.44661595,2 2,2.44266033 2,2.99895656 Z M10.0024554,3 C10.0009345,3 10,4.00104344 10,4.00104344 C10,4.00307541 2.99754465,4 2.99754465,4 C2.99906549,4 3,2.99895656 3,2.99895656 C3,2.99692459 10.0024554,3 10.0024554,3 Z"
@@ -1246,7 +1246,7 @@ export function getWebviewContent(styleSrc: Uri) {
 			</div>
 		</div>
 	
-		<div class="container resources">
+		<div class="container">
 			<h2>Resources</h2>
 
 			<ul>
