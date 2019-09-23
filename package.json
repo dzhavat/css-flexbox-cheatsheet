@@ -2,7 +2,7 @@
 	"name": "css-flexbox-cheatsheet",
 	"displayName": "CSS Flexbox Cheatsheet",
 	"description": "Open a flexbox cheatsheet directly in VS Code.",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
