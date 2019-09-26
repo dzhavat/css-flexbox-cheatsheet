@@ -148,7 +148,7 @@ function matchAll(pattern: RegExp, text: string): Array<RegExpMatchArray> {
 function getText(): vscode.MarkdownString {
 	const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
 
-	return new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri})`);
+	return new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri} "Open Flexbox Cheatsheet")`);
 }
 
 export function deactivate() {}
