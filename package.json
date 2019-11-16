@@ -4,7 +4,7 @@
 	"description": "Open a flexbox cheatsheet directly in VS Code.",
 	"version": "1.2.0",
 	"engines": {
-		"vscode": "^1.36.0"
+		"vscode": "^1.31.0"
 	},
 	"categories": [
 		"Other",
