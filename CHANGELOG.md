@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.2.1 (16-11-2019)
+
+#### Fix
+
+- Change minimum supported VS Code version to 1.31.0
+- Add title to command link
+- Update resources
+
 ## 1.2.0 (23-09-2019)
 
 #### Features
