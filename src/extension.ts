@@ -33,26 +33,31 @@ export function activate(context: vscode.ExtensionContext) {
 	}
 
 	const disposableCommand = vscode.commands.registerCommand('flexbox.cheatsheet', () => {
+		const styleRoot = vscode.Uri.file(path.join(context.extensionPath, 'style'));
+		const imagesRoot = vscode.Uri.file(path.join(context.extensionPath, 'images'));
+
 		// Create and show a new webview
 		const panel = vscode.window.createWebviewPanel(
 			'flexboxCheatsheet',
 			'Flexbox Cheatsheet',
 			vscode.ViewColumn.Beside, {
-				localResourceRoots: [vscode.Uri.file(path.join(context.extensionPath, 'style'))]
+				localResourceRoots: [
+					styleRoot,
+					imagesRoot
+				]
 			}
 		);
 
-		const styleSrc = vscode.Uri.file(
-			path.join(context.extensionPath, 'style', 'custom.css')
-		).with({ scheme: 'vscode-resource' });
+		const stylePath = styleRoot.with({ scheme: 'vscode-resource' });
+		const imagesPath = imagesRoot.with({ scheme: 'vscode-resource' });
 
-		panel.webview.html = getWebviewContent(styleSrc);
+		panel.webview.html = getWebviewContent(stylePath, imagesPath);
 	});
 
 	const disposableVisibleTextEditors = vscode.window.onDidChangeVisibleTextEditors(event => {
 		let editor = vscode.window.activeTextEditor;
 
-		if (editor && supportedFiles.includes(editor.document.languageId)) {
+		if (editor && supportedFiles.indexOf(editor.document.languageId) > -1) {
 			decorate(editor);
 		}
 	});
@@ -62,7 +67,7 @@ export function activate(context: vscode.ExtensionContext) {
 			editor => editor.document.uri === event.document.uri
 		)[0];
 
-		if (openEditor && supportedFiles.includes(openEditor.document.languageId)) {
+		if (openEditor && supportedFiles.indexOf(openEditor.document.languageId) > -1) {
 			decorate(openEditor);
 		}
 	});
@@ -75,14 +80,9 @@ export function activate(context: vscode.ExtensionContext) {
 				return;
 			}
 
-			const contents = getText();
+			const markdownString = getText();
 
-			// To enable command URIs in Markdown content, you must set the `isTrusted` flag.
-			// When creating trusted Markdown string, make sure to properly sanitize all the
-			// input content so that only expected command URIs can be executed
-			contents.isTrusted = true;
-
-			return new vscode.Hover(contents);
+			return new vscode.Hover(markdownString, range);
 		}
 	};
 
@@ -148,7 +148,14 @@ function matchAll(pattern: RegExp, text: string): Array<RegExpMatchArray> {
 function getText(): vscode.MarkdownString {
 	const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
 
-	return new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri} "Open Flexbox Cheatsheet")`);
+	const markdownString = new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri} "Open Flexbox Cheatsheet")`);
+
+	// To enable command URIs in Markdown content, you must set the `isTrusted` flag.
+	// When creating trusted Markdown string, make sure to properly sanitize all the
+	// input content so that only expected command URIs can be executed
+	markdownString.isTrusted = true;
+
+	return markdownString;
 }
 
 export function deactivate() {}
