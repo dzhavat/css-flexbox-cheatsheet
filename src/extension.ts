@@ -57,7 +57,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposableVisibleTextEditors = vscode.window.onDidChangeVisibleTextEditors(event => {
 		let editor = vscode.window.activeTextEditor;
 
-		if (editor && supportedFiles.indexOf(editor.document.languageId) > -1) {
+		if (editor && supportedFiles.includes(editor.document.languageId)) {
 			decorate(editor);
 		}
 	});
@@ -67,7 +67,7 @@ export function activate(context: vscode.ExtensionContext) {
 			editor => editor.document.uri === event.document.uri
 		)[0];
 
-		if (openEditor && supportedFiles.indexOf(openEditor.document.languageId) > -1) {
+		if (openEditor && supportedFiles.includes(openEditor.document.languageId)) {
 			decorate(openEditor);
 		}
 	});
