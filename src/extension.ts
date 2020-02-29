@@ -2,8 +2,8 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 
 import { getWebviewContent } from './webviewContent';
+import * as flexboxPatterns from "./flexboxPatterns";
 
-const flexboxRegEx =  /display:(\s+)?flex[;|\s]/ig;
 const supportedFiles = ['css', 'less', 'sass', 'scss'];
 
 let decorationType: vscode.TextEditorDecorationType;
@@ -74,7 +74,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	const hoverProvider: vscode.HoverProvider = {
 		provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
-			const range = doc.getWordRangeAtPosition(pos, flexboxRegEx);
+			const range = doc.getWordRangeAtPosition(pos, flexboxPatterns.displayFlex);
 
 			if (range === undefined) {
 				return;
@@ -109,7 +109,7 @@ function decorate(editor: vscode.TextEditor) {
   for (let line = 0; line < sourceCodeArr.length; line++) {
 		const sourceCode = sourceCodeArr[line];
 
-		let matches = matchAll(flexboxRegEx, sourceCode);
+		let matches = matchAll(flexboxPatterns.displayFlex, sourceCode);
 
 		if (matches.length > 0) {
 			matches.forEach(match => {
