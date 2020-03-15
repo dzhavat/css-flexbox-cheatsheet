@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import * as path from 'path';
+import { join } from 'path';
 
 import { getWebviewContent } from './webviewContent';
 import * as flexboxPatterns from './flexboxPatterns';
@@ -33,8 +33,8 @@ export function activate(context: vscode.ExtensionContext) {
 	}
 
 	const disposableCommand = vscode.commands.registerCommand('flexbox.cheatsheet', () => {
-		const styleRoot = vscode.Uri.file(path.join(context.extensionPath, 'style'));
-		const imagesRoot = vscode.Uri.file(path.join(context.extensionPath, 'images'));
+		const styleRoot = vscode.Uri.file(join(context.extensionPath, 'style'));
+		const imagesRoot = vscode.Uri.file(join(context.extensionPath, 'images'));
 
 		// Create and show a new webview
 		const panel = vscode.window.createWebviewPanel(
@@ -158,7 +158,7 @@ function buildMarkdownString(context: vscode.ExtensionContext, property: string)
 	flexboxCommand.isTrusted = true;
 
 	const onDiskPath = vscode.Uri.file(
-		path.join(context.extensionPath, 'images', `${property}.svg`)
+		join(context.extensionPath, 'images', `${property}.svg`)
 	);
 
 	const flexboxImage = new vscode.MarkdownString(`![${property}](${onDiskPath.toString()})`);
