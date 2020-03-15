@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 
 import { getWebviewContent } from './webviewContent';
-import * as flexboxPatterns from "./flexboxPatterns";
+import * as flexboxPatterns from './flexboxPatterns';
 
 const supportedFiles = ['css', 'less', 'sass', 'scss'];
 
@@ -74,13 +74,15 @@ export function activate(context: vscode.ExtensionContext) {
 
 	const hoverProvider: vscode.HoverProvider = {
 		provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
-			const range = doc.getWordRangeAtPosition(pos, flexboxPatterns.displayFlex);
+			const range = getPropertyRangeAtPosition(doc, pos);
 
 			if (range === undefined) {
 				return;
 			}
 
-			const markdownString = getText();
+			const property = getPropertyAtRange(doc, range);
+
+			const markdownString = buildMarkdownString(context, property);
 
 			return new vscode.Hover(markdownString, range);
 		}
@@ -109,7 +111,7 @@ function decorate(editor: vscode.TextEditor) {
   for (let line = 0; line < sourceCodeArr.length; line++) {
 		const sourceCode = sourceCodeArr[line];
 
-		let matches = matchAll(flexboxPatterns.displayFlex, sourceCode);
+		let matches = matchAll(flexboxPatterns.displayFlexPattern, sourceCode);
 
 		if (matches.length > 0) {
 			matches.forEach(match => {
@@ -145,17 +147,53 @@ function matchAll(pattern: RegExp, text: string): Array<RegExpMatchArray> {
 	return out;
 }
 
-function getText(): vscode.MarkdownString {
+function buildMarkdownString(context: vscode.ExtensionContext, property: string): vscode.MarkdownString[] {
 	const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
 
-	const markdownString = new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri} "Open Flexbox Cheatsheet")`);
+	const flexboxCommand = new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri} "Open Flexbox Cheatsheet")`);
 
 	// To enable command URIs in Markdown content, you must set the `isTrusted` flag.
 	// When creating trusted Markdown string, make sure to properly sanitize all the
 	// input content so that only expected command URIs can be executed
-	markdownString.isTrusted = true;
+	flexboxCommand.isTrusted = true;
 
-	return markdownString;
+	const onDiskPath = vscode.Uri.file(
+		path.join(context.extensionPath, 'images', `${property}.svg`)
+	);
+
+	const flexboxImage = new vscode.MarkdownString(`![${property}](${onDiskPath.toString()})`);
+
+	return [flexboxCommand, flexboxImage];
+}
+
+function getPropertyRangeAtPosition(doc: vscode.TextDocument, pos: vscode.Position) {
+	let propertyRange: vscode.Range | undefined;
+
+	for (const pattern of flexboxPatterns.allFlexboxPatterns) {
+		const range = doc.getWordRangeAtPosition(pos, pattern);
+	
+		if (range) {
+			propertyRange = range;
+
+			break;
+		}
+	}
+
+	return propertyRange;
+}
+
+function getPropertyAtRange(doc: vscode.TextDocument, range: vscode.Range) {
+	let property = doc.getText(range);
+
+	if (flexboxPatterns.flexGrowBiggerThanZero.test(property)) {
+		return 'flex-grow-1';
+	} else if (flexboxPatterns.flexShrinkBiggerThanZero.test(property)) {
+		return 'flex-shrink-1';
+	} else if (flexboxPatterns.order.test(property)) {
+		return 'order-0';
+	}
+
+	return property.split(':').map(elem => elem.trim()).join('-').replace(';', '');
 }
 
 export function deactivate() {}
