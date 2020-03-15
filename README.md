@@ -22,15 +22,15 @@ The colors of the cheatsheet automatically adapt to the selected theme. The font
 
 #### Using the `Open Flexbox Cheatsheet` command
 
-![Demo using the command](images/demo-command.gif)
+![Demo using the command](images/demo/command.gif)
 
 #### Clicking the `Open Flexbox Cheatsheet` link on hover
 
-![Demo using hover](images/demo-hover.gif)
+![Demo using hover](images/demo/hover.gif)
 
 #### Changing themes
 
-![Demo changing themes](images/demo-theme.gif)
+![Demo changing themes](images/demo/theme.gif)
 
 ## Credit
 
