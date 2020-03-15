@@ -1,46 +1,54 @@
-export const displayFlex = /display:\s*?flex;?/gi;
-export const displayInlineFlex = /display:\s*?inline-flex;?/gi;
+/**
+ * Matches `display: flex` property
+ */
+export const displayFlexPattern = /display:\s*flex;?/g;
 
-export const flexDirectionRow = /flex-direction:\s*?row;?/gi;
-export const flexDirectionRowReverse = /flex-direction:\s*?row-reverse;?/gi;
-export const flexDirectionColumn = /flex-direction:\s*?column;?/gi;
-export const flexDirectionColumnReverse = /flex-direction:\s*?column-reverse;?/gi; 
+/**
+ * Matches `display: inline-flex` property
+ */
+const displayInlineFlexPattern = /display:\s*inline-flex;?/g;
 
-export const flexRowNowrap = /flex-wrap:\s*?nowrap;?/gi;
-export const flexRowWrap = /flex-wrap:\s*?wrap;?/gi;
-export const flexRowWrapReverse = /flex-wrap:\s*?wrap-reverse;?/gi;
+/**
+ * Matches all `align-items`, `align-content` and `align-self` properties
+ */
+const alignPattern = /align-[\w]+:\s*[\w-]+;?/g;
 
-export const justifyContentFlexStart = /justify-content:\s*?flex-start;?/gi;
-export const justifyContentCenter = /justify-content:\s*?center;?/gi;
-export const justifyContentFlexEnd = /justify-content:\s*?flex-end;?/gi;
-export const justifyContentSpaceBetween = /justify-content:\s*?space-between;?/gi;
-export const justifyContentSpaceAround = /justify-content:\s*?space-around;?/gi;
-export const justifyContentSpaceEvenly = /justify-content:\s*?space-evenly;?/gi;
+/**
+ * Matches all `justify-content` properties
+ */
+const justifyPattern = /justify-[\w]+:\s*[\w-]+;?/g;
 
-export const alignItemsStretch = /align-items:\s*?stretch;?/gi;
-export const alignItemsFlexStart = /align-items:\s*?flex-start;?/gi;
-export const alignItemsCenter = /align-items:\s*?center;?/gi;
-export const alignItemsFlexEnd = /align-items:\s*?flex-end;?/gi;
-export const alignItemsBaseline = /align-items:\s*?baseline;?/gi;
+/**
+ * Matches all `flex-direction` and `flex-wrap` properties
+ */
+const flexWrapAndDirectionPattern = /flex-(wrap|direction):\s*[\w-]+;?/g;
 
-export const alignContentStretch = /align-content:\s*?stretch;?/gi;
-export const alignContentFlexStart = /align-content:\s*?flex-start;?/gi;
-export const alignContentCenter = /align-content:\s*?center;?/gi;
-export const alignContentFlexEnd = /align-content:\s*?flex-end;?/gi;
-export const alignContentSpaceBetween = /align-content:\s*?baseline;?/gi;
-export const alignContentSpaceAround = /align-content:\s*?space-around;?/gi;
+/**
+ * Matches all `flex-grow` and `flex-shrink` properties
+ */
+const flexGrowAndShrinkPattern = /flex-(grow|shrink):\s*\d+;?/g;
 
-export const order = /order:\s*?-?\d+;?/gi;
+/**
+ * Matches `flex-grow` values bigger than 0 
+ */
+export const flexGrowBiggerThanZero = /flex-grow:\s*(?!0)\d+;?/;
 
-export const flexGrowZero = /flex-grow:\s*?0;?/gi;
-export const flexGrow = /flex-grow:\s*?(?!0)\d+;?/gi;
+/**
+ * Matches `flex-shrink` values bigger than 0 
+ */
+export const flexShrinkBiggerThanZero = /flex-shrink:\s*(?!0)\d+;?/;
 
-export const flexShrinkZero = /flex-shrink:\s*?0;?/gi;
-export const flexShrink = /flex-shrink:\s*?(?!0)\d+;?/gi;
+/**
+ * Matches `order` property
+ */
+export const order = /order:\s*?-?\d+;?/g;
 
-export const alignSelfAuto = /align-self:(\s+)?auto[;|\s]/gi;
-export const alignSelfFlexStart = /align-self:\s*?flex-start;?/gi;
-export const alignSelfCenter = /align-self:\s*?center;?/gi;
-export const alignSelfFlexEnd = /align-self:\s*?flex-end;?/gi;
-export const alignSelfBaseline = /align-self:\s*?baseline;?/gi;
-export const alignSelfStretch = /align-self:\s*?stretch;?/gi;
+export const allFlexboxPatterns = [
+  displayFlexPattern,
+  displayInlineFlexPattern,
+  alignPattern,
+  justifyPattern,
+  flexWrapAndDirectionPattern,
+  flexGrowAndShrinkPattern,
+  order
+];
