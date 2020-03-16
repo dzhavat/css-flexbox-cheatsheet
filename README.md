@@ -9,6 +9,8 @@ The cheatsheet can be opened in two ways:
 * Press `Ctrl+Shift+P` (Win, Linux) / `Cmd+Shift+P` (Mac) and search for the `Open Flexbox Cheatsheet` command.
 * Hover any `display: flex` declaration and click the `Open Flexbox Cheatsheet` link in the popup.
 
+Besides the `Open Flexbox Cheatsheet` link in the hover popup, there’s also an image shown for each flexbox property. This aims to make it easier to understand how each property works without opening the cheatsheet.
+
 Works with the following file types:
 
 * CSS
