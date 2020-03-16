@@ -1,23 +1,33 @@
-# Change Log
+# Changelog
+
+## 2.0.0 (16-03-2020)
+
+#### Added
+
+- Show an image for each flexbox property in the hover popup
+
+#### Changed
+
+- Set the minimum supported VS Code version to 1.33.0
 
 ## 1.2.1 (16-11-2019)
 
-#### Fix
+#### Changed
 
-- Change minimum supported VS Code version to 1.31.0
+- Set the minimum supported VS Code version to 1.31.0
 - Add title to command link
 - Update resources
 
 ## 1.2.0 (23-09-2019)
 
-#### Features
+#### Added
 
 - Adjust colors based on the selected theme
 - Use the user’s preferred font family
 
 ## 1.1.0 (16-09-2019)
 
-#### Features
+#### Added
 
 - Add icon before `flex` value
 - Add `space-evently` to `justify-content`
@@ -31,7 +41,7 @@
 
 - Initial release
 
-#### Features
+#### Added
 
 The cheatsheet can be opened in two ways:
 
