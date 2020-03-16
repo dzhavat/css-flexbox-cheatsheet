@@ -190,7 +190,7 @@ function getPropertyAtRange(doc: vscode.TextDocument, range: vscode.Range) {
 	} else if (flexboxPatterns.flexShrinkBiggerThanZero.test(property)) {
 		return 'flex-shrink-1';
 	} else if (flexboxPatterns.order.test(property)) {
-		return 'order-0';
+		return 'order';
 	}
 
 	return property.split(':').map(elem => elem.trim()).join('-').replace(';', '');

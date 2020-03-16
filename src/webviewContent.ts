@@ -172,7 +172,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<div>
 						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order" target="_blank" rel="noopener">order</a>: <span class="default">0</span>;
 					</div>
-					<img src="${imagesPath}/order-0.svg" alt="order: 0;">
+					<img src="${imagesPath}/order.svg" alt="order: 0;">
 				</div>
 			</div>
 	
