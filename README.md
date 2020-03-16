@@ -28,6 +28,10 @@ The colors of the cheatsheet automatically adapt to the selected theme. The font
 
 ![Demo using hover](images/demo/hover.gif)
 
+#### Showing an image on hover
+
+![Demo changing themes](images/demo/hover-image.gif)
+
 #### Changing themes
 
 ![Demo changing themes](images/demo/theme.gif)
