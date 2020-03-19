@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { join } from 'path';
+import { lstatSync } from 'fs';
 
 import { getWebviewContent } from './webviewContent';
 import * as flexboxPatterns from './flexboxPatterns';
@@ -148,8 +149,9 @@ function matchAll(pattern: RegExp, text: string): Array<RegExpMatchArray> {
 }
 
 function buildMarkdownString(context: vscode.ExtensionContext, property: string): vscode.MarkdownString[] {
-	const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
+	let markdownString: vscode.MarkdownString[] = [];
 
+	const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
 	const flexboxCommand = new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri} "Open Flexbox Cheatsheet")`);
 
 	// To enable command URIs in Markdown content, you must set the `isTrusted` flag.
@@ -157,13 +159,19 @@ function buildMarkdownString(context: vscode.ExtensionContext, property: string)
 	// input content so that only expected command URIs can be executed
 	flexboxCommand.isTrusted = true;
 
-	const onDiskPath = vscode.Uri.file(
-		join(context.extensionPath, 'images', `${property}.svg`)
-	);
+	markdownString.push(flexboxCommand);
 
-	const flexboxImage = new vscode.MarkdownString(`![${property}](${onDiskPath.toString()})`);
+	const filePath = join(context.extensionPath, 'images', `${property}.svg`);
+	const isFile = doesFileExist(filePath);
 
-	return [flexboxCommand, flexboxImage];
+	if (isFile) {
+		const onDiskPath = vscode.Uri.file(filePath);
+		const propertyIllustration = new vscode.MarkdownString(`![${property}](${onDiskPath.toString()})`);
+
+		markdownString.push(propertyIllustration);
+	}
+
+	return markdownString;
 }
 
 function getPropertyRangeAtPosition(doc: vscode.TextDocument, pos: vscode.Position) {
@@ -180,6 +188,15 @@ function getPropertyRangeAtPosition(doc: vscode.TextDocument, pos: vscode.Positi
 	}
 
 	return propertyRange;
+}
+
+function doesFileExist(filePath: string): boolean {
+	try {
+		const stats = lstatSync(filePath);
+		return stats.isFile();
+	} catch {
+		return false;
+	}
 }
 
 function getPropertyAtRange(doc: vscode.TextDocument, range: vscode.Range) {
