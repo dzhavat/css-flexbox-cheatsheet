@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.0.1 (19-03-2020)
+
+#### Fix
+
+- Fix broken image in hover popup
+
+#### Changed
+
+- Update dependencies
+
 ## 2.0.0 (16-03-2020)
 
 #### Added
