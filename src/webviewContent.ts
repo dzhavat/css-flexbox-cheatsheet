@@ -3,7 +3,7 @@ import { Uri } from "vscode";
 export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 	return `<!doctype html>
 	<html lang="en">
-	
+
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src vscode-resource:; img-src vscode-resource:;">
@@ -13,14 +13,14 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 
 		<link rel="stylesheet" href="${stylePath}/custom.css">
 	</head>
-	
+
 	<body>
 	<main>
 		<div class="container">
 			<h1>Flexbox Cheatsheet</h1>
 
 			<h2>Flex Container</h2>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -33,7 +33,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/display-inline-flex.svg" alt="display: inline-flex;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow" target="_blank" rel="noopener">flex-flow</a>:
@@ -41,7 +41,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					</div>
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -62,7 +62,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/flex-direction-column-reverse.svg" alt="flex-direction: column-reverse;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -79,7 +79,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/flex-wrap-wrap-reverse.svg" alt="flex-wrap: wrap-reverse;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -108,7 +108,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/justify-content-space-evenly.svg" alt="justify-content: space-evenly;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -133,7 +133,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/align-items-baseline.svg" alt="align-items: baseline;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -163,10 +163,10 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="container">
 			<h2>Flex Item</h2>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -175,7 +175,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/order.svg" alt="order: 0;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -183,7 +183,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					</div>
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank" rel="noopener">flex-grow</a>:
@@ -196,7 +196,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/flex-grow-1.svg" alt="flex-grow: 1;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -209,7 +209,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					<img src="${imagesPath}/flex-shrink-1.svg" alt="flex-shrink: 1;">
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -217,7 +217,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 					</div>
 				</div>
 			</div>
-	
+
 			<div class="group">
 				<div class="row">
 					<div>
@@ -247,7 +247,7 @@ export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="container">
 			<h2>Resources</h2>
 
