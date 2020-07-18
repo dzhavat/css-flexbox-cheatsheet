@@ -49,10 +49,11 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 		);
 
-		const stylePath = styleRoot.with({ scheme: 'vscode-resource' });
-		const imagesPath = imagesRoot.with({ scheme: 'vscode-resource' });
+		const stylePath = panel.webview.asWebviewUri(styleRoot);
+		const imagesPath = panel.webview.asWebviewUri(imagesRoot);
+		const cspSource = panel.webview.cspSource;
 
-		panel.webview.html = getWebviewContent(stylePath, imagesPath);
+		panel.webview.html = getWebviewContent(cspSource, stylePath, imagesPath);
 	});
 
 	const disposableVisibleTextEditors = vscode.window.onDidChangeVisibleTextEditors(event => {
