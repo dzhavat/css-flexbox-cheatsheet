@@ -1,12 +1,12 @@
 import { Uri } from "vscode";
 
-export function getWebviewContent(stylePath: Uri, imagesPath: Uri) {
+export function getWebviewContent(cspSource: string, stylePath: Uri, imagesPath: Uri) {
 	return `<!doctype html>
 	<html lang="en">
 
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src vscode-resource:; img-src vscode-resource:;">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${cspSource}; img-src ${cspSource};">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>Flexbox Cheatsheet</title>
