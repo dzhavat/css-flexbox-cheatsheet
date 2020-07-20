@@ -1,8 +1,24 @@
 # Changelog
 
+## Unreleased
+
+#### Added
+
+- Adopted `asWebviewUri` API so the extension will work properly in the future
+- Added Content security policy (CSP) for loading local resources
+
+#### Changed
+
+- Set the minimum supported VS Code version to 1.42.0
+- Update dependencies
+
+#### Fixed
+
+- Decrease package size
+
 ## 2.0.1 (19-03-2020)
 
-#### Fix
+#### Fixed
 
 - Fix broken image in hover popup
 
@@ -55,5 +71,5 @@
 
 The cheatsheet can be opened in two ways:
 
-* Press `Ctrl+Shift+P` (Win, Linux) / `Cmd+Shift+P` (Mac) and search for the `Open Flexbox Cheatsheet` command.
-* Hover any `display: flex` declaration and click the `Open Flexbox Cheatsheet` link in the popup.
+- Press `Ctrl+Shift+P` (Win, Linux) / `Cmd+Shift+P` (Mac) and search for the `Open Flexbox Cheatsheet` command.
+- Hover any `display: flex` declaration and click the `Open Flexbox Cheatsheet` link in the popup.
