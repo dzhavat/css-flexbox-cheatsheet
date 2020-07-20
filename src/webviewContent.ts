@@ -1,7 +1,7 @@
 import { Uri } from "vscode";
 
 export function getWebviewContent(cspSource: string, stylePath: Uri, imagesPath: Uri) {
-	return `<!doctype html>
+	return /*html*/`<!doctype html>
 	<html lang="en">
 
 	<head>
