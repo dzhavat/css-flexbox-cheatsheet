@@ -36,6 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposableCommand = vscode.commands.registerCommand('flexbox.cheatsheet', () => {
 		const styleRoot = vscode.Uri.file(join(context.extensionPath, 'style'));
 		const imagesRoot = vscode.Uri.file(join(context.extensionPath, 'images'));
+		const scriptRoot = vscode.Uri.file(join(context.extensionPath, 'js'));
 
 		// Create and show a new webview
 		const panel = vscode.window.createWebviewPanel(
@@ -44,16 +45,19 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.ViewColumn.Beside, {
 				localResourceRoots: [
 					styleRoot,
-					imagesRoot
-				]
+					imagesRoot,
+					scriptRoot
+				],
+				enableScripts: true
 			}
 		);
 
 		const stylePath = panel.webview.asWebviewUri(styleRoot);
 		const imagesPath = panel.webview.asWebviewUri(imagesRoot);
+		const scriptPath = panel.webview.asWebviewUri(scriptRoot);
 		const cspSource = panel.webview.cspSource;
 
-		panel.webview.html = getWebviewContent(cspSource, stylePath, imagesPath);
+		panel.webview.html = getWebviewContent(cspSource, scriptPath, stylePath, imagesPath);
 	});
 
 	const disposableVisibleTextEditors = vscode.window.onDidChangeVisibleTextEditors(event => {
