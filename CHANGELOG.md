@@ -1,22 +1,23 @@
 # Changelog
 
-## Unreleased
+## 3.0.0 (2020-09-09)
 
 #### Added
 
-- Adopted `asWebviewUri` API so the extension will work properly in the future
-- Added Content security policy (CSP) for loading local resources
+- Interactive demos to most properties
+- Adopt `asWebviewUri` API so the extension will work properly in future versions of VS Code
+- Content security policy (CSP) when loading local resources
 
 #### Changed
 
-- Set the minimum supported VS Code version to 1.42.0
+- Set the minimum supported VS Code version to 1.44.0
 - Update dependencies
 
 #### Fixed
 
 - Decrease package size
 
-## 2.0.1 (19-03-2020)
+## 2.0.1 (2020-03-19)
 
 #### Fixed
 
@@ -26,7 +27,7 @@
 
 - Update dependencies
 
-## 2.0.0 (16-03-2020)
+## 2.0.0 (2020-03-16)
 
 #### Added
 
@@ -36,7 +37,7 @@
 
 - Set the minimum supported VS Code version to 1.33.0
 
-## 1.2.1 (16-11-2019)
+## 1.2.1 (2019-11-16)
 
 #### Changed
 
@@ -44,14 +45,14 @@
 - Add title to command link
 - Update resources
 
-## 1.2.0 (23-09-2019)
+## 1.2.0 (2019-09-23)
 
 #### Added
 
 - Adjust colors based on the selected theme
 - Use the user’s preferred font family
 
-## 1.1.0 (16-09-2019)
+## 1.1.0 (2019-09-16)
 
 #### Added
 
@@ -63,7 +64,7 @@
 
 - Add [Content security policy](https://code.visualstudio.com/api/extension-guides/webview#content-security-policy)
 
-## 1.0.0 (04-09-2019)
+## 1.0.0 (2019-09-04)
 
 - Initial release
 
