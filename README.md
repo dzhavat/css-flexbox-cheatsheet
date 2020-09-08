@@ -11,6 +11,8 @@ The cheatsheet can be opened in two ways:
 
 Besides the `Open Flexbox Cheatsheet` link in the hover popup, there’s also an image shown for each flexbox property. This aims to make it easier to understand how each property works without opening the cheatsheet.
 
+Most properties now also have interactive demos which can help you see how each value works.
+
 Works with the following file types:
 
 * CSS
@@ -18,7 +20,7 @@ Works with the following file types:
 * Sass
 * Scss
 
-The colors of the cheatsheet automatically adapt to the selected theme. The font is based on the user’s preferred font family.
+The colors of the cheatsheet automatically adapt to the selected theme. The font is based on the user’s preferred font.
 
 ## Demo
 
@@ -29,6 +31,10 @@ The colors of the cheatsheet automatically adapt to the selected theme. The font
 #### Clicking the `Open Flexbox Cheatsheet` link on hover
 
 ![Demo using hover](images/demo/hover.gif)
+
+#### Trying the interactive demos
+
+![Demo using hover](images/demo/interactive-demo.gif)
 
 #### Showing an image on hover
 
