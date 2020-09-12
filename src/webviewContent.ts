@@ -9,7 +9,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${cspSource}; style-src ${cspSource}; img-src ${cspSource};">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Flexbox Cheatsheet</title>
+		<title>CSS Flexbox Cheatsheet</title>
 
 		<link rel="stylesheet" href="${stylePath}/custom.css">
 	</head>
@@ -17,17 +17,20 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 	<body>
 		<main>
 			<div class="container">
-				<h1>Flexbox Cheatsheet</h1>
+				<h1>CSS Flexbox Cheatsheet</h1>
 
 				<h2>Flex Container</h2>
 
 				<div class="group">
+					<h3>Display</h3>
+
 					<div class="row">
 						<div>
 							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank" rel="noopener">display</a>: flex;
 						</div>
 						<img src="${imagesPath}/display-flex.svg" alt="display: flex;">
 					</div>
+
 					<div class="row">
 						<div>display: inline-flex;</div>
 						<img src="${imagesPath}/display-inline-flex.svg" alt="display: inline-flex;">
@@ -35,6 +38,8 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 				</div>
 
 				<div class="group">
+					<h3>Flex flow (shorthand)</h3>
+
 					<div class="row">
 						<div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow" target="_blank" rel="noopener">flex-flow</a>:
 							<span class="default">row nowrap;</span> <span class="shorthand-hint">(flex-direction flex-wrap)</span>
@@ -281,6 +286,8 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 				<h2>Flex Item</h2>
 
 				<div class="group">
+					<h3>Order</h3>
+
 					<div class="row">
 						<div>
 							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order" target="_blank" rel="noopener">order</a>: <span class="default">0</span>;
@@ -290,6 +297,8 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 				</div>
 
 				<div class="group">
+					<h3>Flex (shorthand)</h3>
+
 					<div class="row">
 						<div>
 							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank" rel="noopener">flex</a>: <span class="default">0 1 auto;</span> <span class="shorthand-hint">(flex-grow flex-shrink flex-basis)</span>
@@ -327,6 +336,8 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 				</div>
 
 				<div class="group">
+					<h3>Flex shrink</h3>
+
 					<div class="row">
 						<div>
 							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank" rel="noopener">flex-shrink</a>: <span class="default">0</span>;
@@ -340,6 +351,8 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 				</div>
 
 				<div class="group">
+					<h3>Flex basis</h3>
+
 					<div class="row">
 						<div>
 							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank" rel="noopener">flex-basis</a>: <span class="default">auto</span>;
