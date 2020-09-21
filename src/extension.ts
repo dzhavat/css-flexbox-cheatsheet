@@ -42,7 +42,8 @@ export function activate(context: vscode.ExtensionContext) {
 		const panel = vscode.window.createWebviewPanel(
 			'flexboxCheatsheet',
 			'Flexbox Cheatsheet',
-			vscode.ViewColumn.Beside, {
+			vscode.ViewColumn.Beside,
+			{
 				localResourceRoots: [
 					styleRoot,
 					imagesRoot,
