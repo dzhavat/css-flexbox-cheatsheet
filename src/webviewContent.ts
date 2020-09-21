@@ -76,7 +76,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="flex-direction-column" type="button">column</button>
 						<button class="button" data-js-class="flex-direction-column-reverse" type="button">column-reverse</button>
 
-						<div class="flexbox-container">
+						<div class="flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -111,7 +111,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="flex-wrap-flex-wrap" type="button">flex-wrap</button>
 						<button class="button" data-js-class="flex-wrap-wrap-reverse" type="button">wrap-reverse</button>
 
-						<div class="flexbox-container">
+						<div class="flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -168,7 +168,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="justify-content-space-around" type="button">space-around</button>
 						<button class="button" data-js-class="justify-content-space-evenly" type="button">space-evenly</button>
 
-						<div class="flexbox-container">
+						<div class="flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -215,7 +215,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="align-items-flex-end" type="button">flex-end</button>
 						<button class="button" data-js-class="align-items-baseline" type="button">baseline</button>
 
-						<div class="flexbox-container">
+						<div class="flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -268,7 +268,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="align-content-space-between" type="button">space-between</button>
 						<button class="button" data-js-class="align-content-space-around" type="button">space-around</button>
 
-						<div class="flexbox-container">
+						<div class="flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -326,7 +326,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button selected" data-js-class="flex-grow-0" type="button">0</button>
 						<button class="button" data-js-class="flex-grow-1" type="button">1</button>
 
-						<div class="flexbox-container">
+						<div class="flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -404,7 +404,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="align-self-baseline" type="button">baseline</button>
 						<button class="button" data-js-class="align-self-stretch" type="button">stretch</button>
 
-						<div class="flexbox-container">
+						<div class="flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
