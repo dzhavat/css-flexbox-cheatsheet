@@ -1,6 +1,16 @@
 # Changelog
 
-## Unreleased
+## [Unreleased]
+
+## [3.0.2](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.0.1...3.0.2) - 2020-09-24
+
+### Changed
+
+- Add `dir` attribute with a value of `ltr` to each playground
+
+### Fixed
+
+- Update the links in the *Resources* section
 
 ## [3.0.1](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.0.0...3.0.1) - 2020-09-12
 
