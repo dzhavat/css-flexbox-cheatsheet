@@ -420,11 +420,10 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 
 				<ul>
 					<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener">A Complete Guide to Flexbox</a></li>
-					<li><a href="https://github.com/samanthaming/Flexbox30" target="_blank" rel="noopener">Learn Flexbox in 30 days with 30 code tidbits</a></li>
+					<li><a href="https://www.samanthaming.com/flexbox30/" target="_blank" rel="noopener">Learn Flexbox with 30 Code Tidbits</a></li>
 					<li><a href="https://www.flexboxpatterns.com/" target="_blank" rel="noopener">Flexbox Patterns</a></li>
-					<li><a href="https://flexboxfroggy.com" target="_blank" rel="noopener">Flexbox Froggy</a></li>
-					<li><a href="https://mastery.games/p/flexbox-zombies" target="_blank" rel="noopener">Flexbox Zombies</a></li>
-					<li><a href="https://github.com/philipwalton/flexbugs" target="_blank" rel="noopener">Flexbugs</a> - Flexbox issues</li>
+					<li><a href="https://flexboxfroggy.com/" target="_blank" rel="noopener">Flexbox Froggy</a></li>
+					<li><a href="https://flexboxzombies.com/p/flexbox-zombies" target="_blank" rel="noopener">Flexbox Zombies</a></li>
 				</ul>
 			</div>
 		</main>
