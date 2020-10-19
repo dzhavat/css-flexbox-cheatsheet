@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "flexbox.cheatsheet",
-				"title": "Open Flexbox Cheatsheet"
+				"title": "Open CSS Flexbox Cheatsheet"
 			}
 		]
 	},
