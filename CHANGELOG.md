@@ -2,8 +2,15 @@
 
 ## [Unreleased]
 
+## [3.1.0](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.0.2...3.1.0) - 2020-10-24
+
+### Added
+
+- Support for selecting directionality to be used in the interactive demos
+
 ### Changed
 
+- Rename command title used for opening the cheatsheet from `Open Flexbox Cheatsheet` to `Open CSS Flexbox Cheatsheet`
 - Migrate TSLint to ESLint
 
 ## [3.0.2](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.0.1...3.0.2) - 2020-09-24
