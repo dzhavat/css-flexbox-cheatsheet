@@ -46,10 +46,6 @@ If you find this extension useful and would like to support my work, you can [bu
 
 ![Demo changing themes](images/demo/hover-image.gif)
 
-#### Changing themes
-
-![Demo changing themes](images/demo/theme.gif)
-
 ## Credit
 
 The cheatsheet in this extension is based on the excellent [Flexbox Cheatsheet](https://darekkay.com/dev/flexbox-cheatsheet.html) by [Darek Kay](https://darekkay.com/).
