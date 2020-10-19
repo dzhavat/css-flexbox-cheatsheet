@@ -19,6 +19,19 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 			<div class="container">
 				<h1>CSS Flexbox Cheatsheet</h1>
 
+				<h2>Settings</h2>
+
+				<div class="directionality-settings">
+					<p>Select the <i>directionality</i> to be used in the interactive demos. (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir">Learn more</a>)</p>
+					<label>
+						<input type="radio" name="directionality" value="ltr" checked> ltr (left-to-right)
+					</label>
+					<br>
+					<label>
+						<input type="radio" name="directionality" value="rtl"> rtl (right-to-left)
+					</label>
+				</div>
+
 				<h2>Flex Container</h2>
 
 				<div class="group">
@@ -76,7 +89,11 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="flex-direction-column" type="button">column</button>
 						<button class="button" data-js-class="flex-direction-column-reverse" type="button">column-reverse</button>
 
-						<div class="flexbox-container" dir="ltr">
+						<div class="directionality align-right">
+							<code class="js-directionality-code">dir="ltr"</code>
+						</div>
+
+						<div class="flexbox-container js-flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -111,7 +128,11 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="flex-wrap-flex-wrap" type="button">flex-wrap</button>
 						<button class="button" data-js-class="flex-wrap-wrap-reverse" type="button">wrap-reverse</button>
 
-						<div class="flexbox-container" dir="ltr">
+						<div class="directionality align-right">
+							<code class="js-directionality-code">dir="ltr"</code>
+						</div>
+
+						<div class="flexbox-container js-flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -168,7 +189,11 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="justify-content-space-around" type="button">space-around</button>
 						<button class="button" data-js-class="justify-content-space-evenly" type="button">space-evenly</button>
 
-						<div class="flexbox-container" dir="ltr">
+						<div class="directionality align-right">
+							<code class="js-directionality-code">dir="ltr"</code>
+						</div>
+
+						<div class="flexbox-container js-flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -215,7 +240,11 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="align-items-flex-end" type="button">flex-end</button>
 						<button class="button" data-js-class="align-items-baseline" type="button">baseline</button>
 
-						<div class="flexbox-container" dir="ltr">
+						<div class="directionality align-right">
+							<code class="js-directionality-code">dir="ltr"</code>
+						</div>
+
+						<div class="flexbox-container js-flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -268,7 +297,11 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="align-content-space-between" type="button">space-between</button>
 						<button class="button" data-js-class="align-content-space-around" type="button">space-around</button>
 
-						<div class="flexbox-container" dir="ltr">
+						<div class="directionality align-right">
+							<code class="js-directionality-code">dir="ltr"</code>
+						</div>
+
+						<div class="flexbox-container js-flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -326,7 +359,11 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button selected" data-js-class="flex-grow-0" type="button">0</button>
 						<button class="button" data-js-class="flex-grow-1" type="button">1</button>
 
-						<div class="flexbox-container" dir="ltr">
+						<div class="directionality align-right">
+							<code class="js-directionality-code">dir="ltr"</code>
+						</div>
+
+						<div class="flexbox-container js-flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
@@ -404,7 +441,11 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 						<button class="button" data-js-class="align-self-baseline" type="button">baseline</button>
 						<button class="button" data-js-class="align-self-stretch" type="button">stretch</button>
 
-						<div class="flexbox-container" dir="ltr">
+						<div class="directionality align-right">
+							<code class="js-directionality-code">dir="ltr"</code>
+						</div>
+
+						<div class="flexbox-container js-flexbox-container" dir="ltr">
 							<div>One</div>
 							<div>Two</div>
 							<div>Three</div>
