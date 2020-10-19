@@ -15,6 +15,15 @@
   });
 
   /**
+   * @type NodeListOf<HTMLInputElement>
+   */
+  const directionalityInputs = document.querySelectorAll('input[name="directionality"]');
+
+  directionalityInputs.forEach(input => {
+    input.addEventListener('click', updateDirectionality);
+  });
+
+  /**
    * 
    * @param {Event} event 
    */
@@ -70,5 +79,21 @@
 
     secondElement.className = '';
     secondElement.classList.add(selectedButtonDataClass);
+  }
+
+  /**
+   * 
+   * @param {Event} event 
+   */
+  function updateDirectionality(event) {
+    let selectedDirectionality = [...directionalityInputs].find(input => input.checked).value;
+
+    /** @type NodeListOf<HTMLDivElement> */
+    const flexboxContainers = document.querySelectorAll('.js-flexbox-container');
+    flexboxContainers.forEach(element => element.dir = selectedDirectionality);
+
+    /** @type NodeListOf<HTMLElement> */
+    const directionalityCodeContainers = document.querySelectorAll('.js-directionality-code');
+    directionalityCodeContainers.forEach(element => element.innerHTML = `dir="${selectedDirectionality}"`);
   }
 }());

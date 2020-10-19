@@ -10,15 +10,18 @@ a:hover {
   text-decoration: underline;
 }
 
+.align-right {
+  text-align: right;
+}
+
 main {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-h1, h2 {
-  padding-bottom: 20px;
-  text-align: center;
+h1 {
+  padding-bottom: 1.25rem;
 }
 
 .container {
@@ -79,11 +82,19 @@ button.selected {
   flex-wrap: wrap;
 }
 
+.directionality-settings {
+  padding-bottom: 1.25rem;
+}
+
+.directionality {
+  margin-top: 0.5rem;
+}
+
 .flexbox-container {
   border: 1px solid #A6E22D;
   border-radius: 3px;
   display: flex;
-  margin: 1rem 0;
+  margin: 0.5rem 0 1rem;
 }
 
 .flexbox-container > div {
