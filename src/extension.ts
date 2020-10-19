@@ -41,7 +41,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// Create and show a new webview
 		const panel = vscode.window.createWebviewPanel(
 			'flexboxCheatsheet',
-			'Flexbox Cheatsheet',
+			'CSS Flexbox Cheatsheet',
 			vscode.ViewColumn.Beside,
 			{
 				localResourceRoots: [
@@ -158,7 +158,7 @@ function buildMarkdownString(context: vscode.ExtensionContext, property: string)
 	let markdownString: vscode.MarkdownString[] = [];
 
 	const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
-	const flexboxCommand = new vscode.MarkdownString(`[Open Flexbox Cheatsheet](${commandUri} "Open Flexbox Cheatsheet")`);
+	const flexboxCommand = new vscode.MarkdownString(`[Open CSS Flexbox Cheatsheet](${commandUri} "Open CSS Flexbox Cheatsheet")`);
 
 	// To enable command URIs in Markdown content, you must set the `isTrusted` flag.
 	// When creating trusted Markdown string, make sure to properly sanitize all the
