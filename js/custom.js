@@ -48,7 +48,7 @@
     const selectedButtonDataClass = selectedButton.dataset.jsClass;
     const flexboxContainer = playgroundContainer.querySelector('.flexbox-container');
 
-    flexboxContainer.className = 'flexbox-container';
+    flexboxContainer.className = 'flexbox-container js-flexbox-container';
     flexboxContainer.classList.add(selectedButtonDataClass);
   }
 
