@@ -2,11 +2,11 @@
 
 ## [Unreleased]
 
-## [3.1.0](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.0.2...3.1.0) - 2020-10-24
+## [3.1.0](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.0.2...3.1.0) - 2020-10-21
 
 ### Added
 
-- Support for selecting directionality to be used in the interactive demos
+- Support for selecting directionality to be used in the interactive playgrounds
 
 ### Changed
 
