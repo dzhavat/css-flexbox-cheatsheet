@@ -11,7 +11,7 @@ The cheatsheet can be opened in two ways:
 
 Besides the `Open CSS Flexbox Cheatsheet` link in the hover popup, there’s also an image shown for each flexbox property. This aims to make it easier to understand how each property works without opening the cheatsheet.
 
-Most properties now also have interactive demos which can help you see how each value works.
+Most properties now also have interactive playgrounds which can help you see how each value works.
 
 Works with the following file types:
 
@@ -19,6 +19,12 @@ Works with the following file types:
 * Less
 * Sass
 * Scss
+
+## Settings
+
+After opening the cheatsheet, you can select the directionality to be used in the interactive playgrounds. This is especially useful for languages that write from right-to-left. [Learn more](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir).
+
+## Colors
 
 The colors of the cheatsheet automatically adapt to the selected theme. The font is based on the user’s preferred font.
 
@@ -32,19 +38,23 @@ If you find this extension useful and would like to support my work, you can [bu
 
 #### Using the `Open CSS Flexbox Cheatsheet` command
 
-![Demo using the command](images/demo/command.gif)
+![Demo using "Open CSS Flexbox Cheatsheet" the command](images/demo/command.gif)
 
 #### Clicking the `Open CSS Flexbox Cheatsheet` link on hover
 
-![Demo using hover](images/demo/hover.gif)
+![Demo opening the cheatsheet by clicking the "Open CSS Flexbox Cheatsheet" command](images/demo/hover.gif)
 
-#### Trying the interactive demos
+#### Trying the interactive playgrounds
 
-![Demo using hover](images/demo/interactive-demo.gif)
+![Trying the interactive playgrounds](images/demo/interactive-playgrounds.gif)
+
+#### Changing directionality in the interactive playgrounds
+
+![Demo changing directionality](images/demo/changing-directionality.gif)
 
 #### Showing an image on hover
 
-![Demo changing themes](images/demo/hover-image.gif)
+![Demo showing an image on hover](images/demo/hover-image.gif)
 
 ## Credit
 
