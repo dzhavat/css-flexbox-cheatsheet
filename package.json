@@ -14,6 +14,13 @@
 	"icon": "images/icon.png",
 	"main": "./out/extension.js",
 	"contributes": {
+		"keybindings": [
+			{
+				"command": "flexbox.cheatsheet",
+				"key": "Ctrl+K K",
+				"mac": "Cmd+K K"
+			}
+		],
 		"commands": [
 			{
 				"command": "flexbox.cheatsheet",
