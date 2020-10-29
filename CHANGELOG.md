@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.2.0](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.1.0...3.2.0) - 2020-10-29
+
+### Added
+
+- Keyboard shortcut to open the cheatsheet - `Ctrl + K K` (Win, Linux) / `Cmd + K K` (Mac)
+
 ## [3.1.0](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.0.2...3.1.0) - 2020-10-21
 
 ### Added
