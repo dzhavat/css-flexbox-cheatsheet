@@ -6,7 +6,8 @@ VS Code extension that lets you open a flexbox cheatsheet directly in the editor
 
 The cheatsheet can be opened in a few ways:
 
-* Press `Ctrl+Shift+P` (Win, Linux) / `Cmd+Shift+P` (Mac) and search for the `Open CSS Flexbox Cheatsheet` command.
+* Press `Ctrl + Shift + P` (Win, Linux) / `Cmd + Shift + P` (Mac) and search for the `Open CSS Flexbox Cheatsheet` command.
+* Press `Ctrl + K K` (Win, Linux) / `Cmd + K K` (Mac) keyboard shortcut.
 * Hover any `display: flex` declaration and click the `Open CSS Flexbox Cheatsheet` link in the popup.
 
 Besides the `Open CSS Flexbox Cheatsheet` link in the hover popup, there’s also an image shown for each flexbox property. This aims to make it easier to understand how each property works without opening the cheatsheet.
@@ -18,7 +19,7 @@ This functionality is available for the following file types:
 * Sass
 * Scss
 
-Most properties also have interactive playgrounds.
+Most properties also have interactive playgrounds that are part of the cheatsheet.
 
 ## Settings
 
