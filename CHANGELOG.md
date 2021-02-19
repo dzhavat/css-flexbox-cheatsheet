@@ -1,6 +1,12 @@
 # Changelog
 
-## [Unreleased]
+## [3.2.1](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.2.0...3.2.1) - 2021-02-12
+
+### Changed
+
+- Set the minimum supported VS Code version to 1.47.0
+- Update dependencies
+- Rename default git branch from `master` to `main`
 
 ## [3.2.0](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.1.0...3.2.0) - 2020-10-29
 
