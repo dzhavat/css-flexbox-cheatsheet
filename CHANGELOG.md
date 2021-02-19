@@ -1,6 +1,12 @@
 # Changelog
 
-## [3.2.1](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.2.0...3.2.1) - 2021-02-12
+## [3.2.2](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.2.1...3.2.2) - 2021-02-19
+
+### Fixed
+
+- Fix links to demo gifs
+
+## [3.2.1](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.2.0...3.2.1) - 2021-02-19
 
 ### Changed
 
