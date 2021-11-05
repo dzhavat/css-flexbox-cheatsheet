@@ -4,7 +4,7 @@
   "description": "Open a flexbox cheatsheet directly in VS Code.",
   "version": "3.2.4",
   "engines": {
-    "vscode": "^1.56.0"
+    "vscode": "^1.57.0"
   },
   "categories": [
     "Other",
@@ -52,7 +52,7 @@
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.0.0",
     "@types/node": "^12.19.11",
-    "@types/vscode": "1.56.0",
+    "@types/vscode": "1.57.0",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "eslint": "^8.1.0",
