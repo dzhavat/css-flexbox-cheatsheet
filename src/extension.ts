@@ -10,213 +10,241 @@ const supportedFiles = ['css', 'less', 'sass', 'scss'];
 let decorationType: vscode.TextEditorDecorationType;
 
 export function activate(context: vscode.ExtensionContext) {
-	decorationType = vscode.window.createTextEditorDecorationType({
-		after: {
-			margin: '0 0.2rem 0 0',
-			width: '.8125rem'
-		},
-		dark: {
-			after: {
-				contentIconPath: context.asAbsolutePath('/images/flexbox-icon-light.svg')
-			}
-		},
-		light: {
-			after: {
-				contentIconPath: context.asAbsolutePath('/images/flexbox-icon-dark.svg')
-			}
-		}
-	});
+  decorationType = vscode.window.createTextEditorDecorationType({
+    after: {
+      margin: '0 0.2rem 0 0',
+      width: '.8125rem',
+    },
+    dark: {
+      after: {
+        contentIconPath: context.asAbsolutePath(
+          '/images/flexbox-icon-light.svg'
+        ),
+      },
+    },
+    light: {
+      after: {
+        contentIconPath: context.asAbsolutePath(
+          '/images/flexbox-icon-dark.svg'
+        ),
+      },
+    },
+  });
 
-	const activeEditor = vscode.window.activeTextEditor;
-	
-	if (activeEditor) {
-		decorate(activeEditor);
-	}
+  const activeEditor = vscode.window.activeTextEditor;
 
-	const disposableCommand = vscode.commands.registerCommand('flexbox.cheatsheet', () => {
-		const styleRoot = vscode.Uri.file(join(context.extensionPath, 'style'));
-		const imagesRoot = vscode.Uri.file(join(context.extensionPath, 'images'));
-		const scriptRoot = vscode.Uri.file(join(context.extensionPath, 'js'));
+  if (activeEditor) {
+    decorate(activeEditor);
+  }
 
-		// Create and show a new webview
-		const panel = vscode.window.createWebviewPanel(
-			'flexboxCheatsheet',
-			'CSS Flexbox Cheatsheet',
-			vscode.ViewColumn.Beside,
-			{
-				localResourceRoots: [
-					styleRoot,
-					imagesRoot,
-					scriptRoot
-				],
-				enableScripts: true
-			}
-		);
+  const disposableCommand = vscode.commands.registerCommand(
+    'flexbox.cheatsheet',
+    () => {
+      const styleRoot = vscode.Uri.file(join(context.extensionPath, 'style'));
+      const imagesRoot = vscode.Uri.file(join(context.extensionPath, 'images'));
+      const scriptRoot = vscode.Uri.file(join(context.extensionPath, 'js'));
 
-		const stylePath = panel.webview.asWebviewUri(styleRoot);
-		const imagesPath = panel.webview.asWebviewUri(imagesRoot);
-		const scriptPath = panel.webview.asWebviewUri(scriptRoot);
-		const cspSource = panel.webview.cspSource;
+      // Create and show a new webview
+      const panel = vscode.window.createWebviewPanel(
+        'flexboxCheatsheet',
+        'CSS Flexbox Cheatsheet',
+        vscode.ViewColumn.Beside,
+        {
+          localResourceRoots: [styleRoot, imagesRoot, scriptRoot],
+          enableScripts: true,
+        }
+      );
 
-		panel.webview.html = getWebviewContent(cspSource, scriptPath, stylePath, imagesPath);
-	});
+      const stylePath = panel.webview.asWebviewUri(styleRoot);
+      const imagesPath = panel.webview.asWebviewUri(imagesRoot);
+      const scriptPath = panel.webview.asWebviewUri(scriptRoot);
+      const cspSource = panel.webview.cspSource;
 
-	const disposableVisibleTextEditors = vscode.window.onDidChangeVisibleTextEditors(event => {
-		let editor = vscode.window.activeTextEditor;
+      panel.webview.html = getWebviewContent(
+        cspSource,
+        scriptPath,
+        stylePath,
+        imagesPath
+      );
+    }
+  );
 
-		if (editor && supportedFiles.includes(editor.document.languageId)) {
-			decorate(editor);
-		}
-	});
+  const disposableVisibleTextEditors =
+    vscode.window.onDidChangeVisibleTextEditors((event) => {
+      let editor = vscode.window.activeTextEditor;
 
-	const disposableChangeDocument = vscode.workspace.onDidChangeTextDocument(event => {
-		const openEditor = vscode.window.visibleTextEditors.filter(
-			editor => editor.document.uri === event.document.uri
-		)[0];
+      if (editor && supportedFiles.includes(editor.document.languageId)) {
+        decorate(editor);
+      }
+    });
 
-		if (openEditor && supportedFiles.includes(openEditor.document.languageId)) {
-			decorate(openEditor);
-		}
-	});
+  const disposableChangeDocument = vscode.workspace.onDidChangeTextDocument(
+    (event) => {
+      const openEditor = vscode.window.visibleTextEditors.filter(
+        (editor) => editor.document.uri === event.document.uri
+      )[0];
 
-	const hoverProvider: vscode.HoverProvider = {
-		provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
-			const range = getPropertyRangeAtPosition(doc, pos);
+      if (
+        openEditor &&
+        supportedFiles.includes(openEditor.document.languageId)
+      ) {
+        decorate(openEditor);
+      }
+    }
+  );
 
-			if (range === undefined) {
-				return;
-			}
+  const hoverProvider: vscode.HoverProvider = {
+    provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
+      const range = getPropertyRangeAtPosition(doc, pos);
 
-			const property = getPropertyAtRange(doc, range);
+      if (range === undefined) {
+        return;
+      }
 
-			const markdownString = buildMarkdownString(context, property);
+      const property = getPropertyAtRange(doc, range);
 
-			return new vscode.Hover(markdownString, range);
-		}
-	};
+      const markdownString = buildMarkdownString(context, property);
 
-	const disposableHoverProvider = vscode.languages.registerHoverProvider(
-		supportedFiles,
-		hoverProvider
-	);
+      return new vscode.Hover(markdownString, range);
+    },
+  };
 
-	context.subscriptions.push(
-		disposableCommand,
-		disposableHoverProvider,
-		disposableChangeDocument,
-		disposableVisibleTextEditors
-	);
+  const disposableHoverProvider = vscode.languages.registerHoverProvider(
+    supportedFiles,
+    hoverProvider
+  );
+
+  context.subscriptions.push(
+    disposableCommand,
+    disposableHoverProvider,
+    disposableChangeDocument,
+    disposableVisibleTextEditors
+  );
 }
 
 function decorate(editor: vscode.TextEditor) {
   const sourceCode = editor.document.getText();
-	
+
   let decorationsArray: vscode.DecorationOptions[] = [];
 
   const sourceCodeArr = sourceCode.split('\n');
 
   for (let line = 0; line < sourceCodeArr.length; line++) {
-		const sourceCode = sourceCodeArr[line];
+    const sourceCode = sourceCodeArr[line];
 
-		let matches = matchAll(flexboxPatterns.displayFlexPattern, sourceCode);
+    let matches = matchAll(flexboxPatterns.displayFlexPattern, sourceCode);
 
-		if (matches.length > 0) {
-			matches.forEach(match => {
-				if (match.index !== undefined) {
-					const flexIndex = sourceCode.indexOf('flex', match.index);
+    if (matches.length > 0) {
+      matches.forEach((match) => {
+        if (match.index !== undefined) {
+          const flexIndex = sourceCode.indexOf('flex', match.index);
 
-					let range = new vscode.Range(
-						new vscode.Position(line, match.index),
-						new vscode.Position(line, flexIndex)
-					);
+          let range = new vscode.Range(
+            new vscode.Position(line, match.index),
+            new vscode.Position(line, flexIndex)
+          );
 
-					let decoration = { range };
+          let decoration = { range };
 
-					decorationsArray.push(decoration);
-				}
-			});
-		}
+          decorationsArray.push(decoration);
+        }
+      });
+    }
   }
 
   editor.setDecorations(decorationType, decorationsArray);
 }
 
 function matchAll(pattern: RegExp, text: string): Array<RegExpMatchArray> {
-	const out: RegExpMatchArray[] = [];
-	let match: RegExpMatchArray | null;
+  const out: RegExpMatchArray[] = [];
+  let match: RegExpMatchArray | null;
 
-	pattern.lastIndex = 0;
+  pattern.lastIndex = 0;
 
-	while (match = pattern.exec(text)) {
-		out.push(match);
-	}
+  while ((match = pattern.exec(text))) {
+    out.push(match);
+  }
 
-	return out;
+  return out;
 }
 
-function buildMarkdownString(context: vscode.ExtensionContext, property: string): vscode.MarkdownString[] {
-	let markdownString: vscode.MarkdownString[] = [];
+function buildMarkdownString(
+  context: vscode.ExtensionContext,
+  property: string
+): vscode.MarkdownString[] {
+  let markdownString: vscode.MarkdownString[] = [];
 
-	const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
-	const flexboxCommand = new vscode.MarkdownString(`[Open CSS Flexbox Cheatsheet](${commandUri} "Open CSS Flexbox Cheatsheet")`);
+  const commandUri = vscode.Uri.parse('command:flexbox.cheatsheet');
+  const flexboxCommand = new vscode.MarkdownString(
+    `[Open CSS Flexbox Cheatsheet](${commandUri} "Open CSS Flexbox Cheatsheet")`
+  );
 
-	// To enable command URIs in Markdown content, you must set the `isTrusted` flag.
-	// When creating trusted Markdown string, make sure to properly sanitize all the
-	// input content so that only expected command URIs can be executed
-	flexboxCommand.isTrusted = true;
+  // To enable command URIs in Markdown content, you must set the `isTrusted` flag.
+  // When creating trusted Markdown string, make sure to properly sanitize all the
+  // input content so that only expected command URIs can be executed
+  flexboxCommand.isTrusted = true;
 
-	markdownString.push(flexboxCommand);
+  markdownString.push(flexboxCommand);
 
-	const filePath = join(context.extensionPath, 'images', `${property}.svg`);
-	const isFile = doesFileExist(filePath);
+  const filePath = join(context.extensionPath, 'images', `${property}.svg`);
+  const isFile = doesFileExist(filePath);
 
-	if (isFile) {
-		const onDiskPath = vscode.Uri.file(filePath);
-		const propertyIllustration = new vscode.MarkdownString(`![${property}](${onDiskPath.toString()})`);
+  if (isFile) {
+    const onDiskPath = vscode.Uri.file(filePath);
+    const propertyIllustration = new vscode.MarkdownString(
+      `![${property}](${onDiskPath.toString()})`
+    );
 
-		markdownString.push(propertyIllustration);
-	}
+    markdownString.push(propertyIllustration);
+  }
 
-	return markdownString;
+  return markdownString;
 }
 
-function getPropertyRangeAtPosition(doc: vscode.TextDocument, pos: vscode.Position) {
-	let propertyRange: vscode.Range | undefined;
+function getPropertyRangeAtPosition(
+  doc: vscode.TextDocument,
+  pos: vscode.Position
+) {
+  let propertyRange: vscode.Range | undefined;
 
-	for (const pattern of flexboxPatterns.allFlexboxPatterns) {
-		const range = doc.getWordRangeAtPosition(pos, pattern);
-	
-		if (range) {
-			propertyRange = range;
+  for (const pattern of flexboxPatterns.allFlexboxPatterns) {
+    const range = doc.getWordRangeAtPosition(pos, pattern);
 
-			break;
-		}
-	}
+    if (range) {
+      propertyRange = range;
 
-	return propertyRange;
+      break;
+    }
+  }
+
+  return propertyRange;
 }
 
 function doesFileExist(filePath: string): boolean {
-	try {
-		const stats = lstatSync(filePath);
-		return stats.isFile();
-	} catch {
-		return false;
-	}
+  try {
+    const stats = lstatSync(filePath);
+    return stats.isFile();
+  } catch {
+    return false;
+  }
 }
 
 function getPropertyAtRange(doc: vscode.TextDocument, range: vscode.Range) {
-	let property = doc.getText(range);
+  let property = doc.getText(range);
 
-	if (flexboxPatterns.flexGrowBiggerThanZero.test(property)) {
-		return 'flex-grow-1';
-	} else if (flexboxPatterns.flexShrinkBiggerThanZero.test(property)) {
-		return 'flex-shrink-1';
-	} else if (flexboxPatterns.order.test(property)) {
-		return 'order';
-	}
+  if (flexboxPatterns.flexGrowBiggerThanZero.test(property)) {
+    return 'flex-grow-1';
+  } else if (flexboxPatterns.flexShrinkBiggerThanZero.test(property)) {
+    return 'flex-shrink-1';
+  } else if (flexboxPatterns.order.test(property)) {
+    return 'order';
+  }
 
-	return property.split(':').map(elem => elem.trim()).join('-').replace(';', '');
+  return property
+    .split(':')
+    .map((elem) => elem.trim())
+    .join('-')
+    .replace(';', '');
 }
 
 export function deactivate() {}

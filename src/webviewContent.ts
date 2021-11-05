@@ -1,7 +1,12 @@
-import { Uri } from "vscode";
+import { Uri } from 'vscode';
 
-export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath: Uri, imagesPath: Uri) {
-	return /*html*/`<!doctype html>
+export function getWebviewContent(
+  cspSource: string,
+  scriptPath: Uri,
+  stylePath: Uri,
+  imagesPath: Uri
+) {
+  return /*html*/ `<!doctype html>
 	<html lang="en">
 
 	<head>
@@ -10,7 +15,7 @@ export function getWebviewContent(cspSource: string, scriptPath: Uri, stylePath:
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>CSS Flexbox Cheatsheet</title>
-
+		
 		<link rel="stylesheet" href="${stylePath}/custom.css">
 	</head>
 
