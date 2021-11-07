@@ -19,10 +19,18 @@
   /**
    * @type {Element}
    */
-  const directionalityInputs = document.querySelectorAll('input[name="directionality"]');
+  const directionalityRadioGroup = document.querySelector(
+    '[name="js-directionality-radio-group"]'
+  );
 
-  directionalityInputs.forEach((input) => {
-    input.addEventListener('click', updateDirectionality);
+  directionalityRadioGroup.addEventListener('change', (event) => {
+    /**
+     * @type {string}
+     */
+    // @ts-ignore
+    const directionality = event.target.value;
+
+    updateDirectionality(directionality);
   });
 
   /**
@@ -94,15 +102,12 @@
   }
 
   /**
-   *
-   * @param {Event} event
+   * @param {string} selectedDirectionality
    */
-  function updateDirectionality(event) {
-    let selectedDirectionality = [...directionalityInputs].find(
-      (input) => input.checked
-    ).value;
-
-    /** @type NodeListOf<HTMLDivElement> */
+  function updateDirectionality(selectedDirectionality) {
+    /**
+     * @type {NodeListOf<HTMLDivElement>}
+     */
     const flexboxContainers = document.querySelectorAll(
       '.js-flexbox-container'
     );

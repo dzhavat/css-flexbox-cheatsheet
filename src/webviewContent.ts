@@ -1,5 +1,8 @@
 import { Uri } from 'vscode';
 
+const webviewUiToolkitHash =
+  'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';
+
 export function getWebviewContent(
   cspSource: string,
   scriptPath: Uri,
@@ -11,7 +14,7 @@ export function getWebviewContent(
 
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${cspSource}; style-src ${cspSource}; img-src ${cspSource};">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${cspSource}; style-src ${cspSource} '${webviewUiToolkitHash}'; img-src ${cspSource};">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>CSS Flexbox Cheatsheet</title>
@@ -28,13 +31,12 @@ export function getWebviewContent(
 
 				<div class="directionality-settings">
 					<p>Select the <i>directionality</i> to be used in the interactive playgrounds. (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir">Learn more</a>)</p>
-					<label>
-						<input type="radio" name="directionality" value="ltr" checked> ltr (left-to-right)
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="directionality" value="rtl"> rtl (right-to-left)
-					</label>
+
+					<vscode-radio-group orientation="vertical" name="js-directionality-radio-group">
+						<label slot="label">Directionality</label>
+						<vscode-radio value="ltr" checked>LTR (left-to-right)</vscode-radio>
+						<vscode-radio value="rtl">RTL (right-to-left)</vscode-radio>
+					</vscode-radio-group>
 				</div>
 
 				<h2>Flex Container</h2>
