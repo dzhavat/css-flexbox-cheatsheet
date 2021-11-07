@@ -1,7 +1,5 @@
 // @ts-check
 (function () {
-  // const vscode = acquireVsCodeApi();
-
   const interactiveFlexContainerPlaygrounds = document.querySelectorAll(
     '.interactive-playground.flex-container'
   );
@@ -19,7 +17,7 @@
   });
 
   /**
-   * @type NodeListOf<HTMLInputElement>
+   * @type {Element}
    */
   const directionalityInputs = document.querySelectorAll('input[name="directionality"]');
 
@@ -37,14 +35,18 @@
       return;
     }
 
-    /** @type {HTMLDivElement} */
+    /**
+     * @type {HTMLDivElement}
+     */
     // @ts-ignore
     const playgroundContainer = event.currentTarget;
 
     const buttons = [...playgroundContainer.querySelectorAll('button')];
     buttons.forEach((button) => button.classList.remove('selected'));
 
-    /** @type {HTMLButtonElement} */
+    /**
+     * @type {HTMLButtonElement}
+     */
     // @ts-ignore
     const selectedButton = event.target;
     selectedButton.classList.add('selected');
@@ -58,7 +60,6 @@
   }
 
   /**
-   *
    * @param {Event} event
    */
   function flexItemPlayground(event) {
@@ -67,14 +68,18 @@
       return;
     }
 
-    /** @type {HTMLDivElement} */
+    /**
+     * @type {HTMLDivElement}
+     */
     // @ts-ignore
     const playgroundContainer = event.currentTarget;
 
     const buttons = [...playgroundContainer.querySelectorAll('button')];
     buttons.forEach((button) => button.classList.remove('selected'));
 
-    /** @type {HTMLButtonElement} */
+    /**
+     * @type {HTMLButtonElement}
+     */
     // @ts-ignore
     const selectedButton = event.target;
     selectedButton.classList.add('selected');
@@ -105,7 +110,9 @@
       (element) => (element.dir = selectedDirectionality)
     );
 
-    /** @type NodeListOf<HTMLElement> */
+    /**
+     * @type {NodeListOf<HTMLElement>}
+     */
     const directionalityCodeContainers = document.querySelectorAll(
       '.js-directionality-code'
     );
