@@ -40,6 +40,9 @@
     "type": "git",
     "url": "https://github.com/dzhavat/css-flexbox-cheatsheet"
   },
+  "vsce": {
+    "githubBranch": "main"
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
