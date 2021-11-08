@@ -477,6 +477,7 @@ export function getWebviewContent(
 			</div>
 		</main>
 
+		<script type="module" src="${scriptPath}/webview-ui-toolkit/toolkit.min.js"></script>
 		<script src="${scriptPath}/custom.js"></script>
 	</body>
 </html>
