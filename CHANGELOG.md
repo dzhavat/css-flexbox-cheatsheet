@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.3.0](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.2.4...3.3.0) - 2021-11-08
+
+### Added
+
+- Add `@vscode/webview-ui-toolkit` package to the project
+
+### Changed
+
+- Use `radio-group` and `radio` elements from “Webview UI Toolkit”
+- Set the minimum supported VS Code version to 1.57.0
+- Update dependencies
+
 ## [3.2.4](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.2.3...3.2.4) - 2021-10-27
 
 ### Changed
