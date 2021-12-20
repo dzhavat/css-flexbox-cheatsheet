@@ -132,7 +132,7 @@ export function getWebviewContent(
 					<h4>Try it out</h4>
 					<div class="interactive-playground flex-container">
 						<button class="button selected" data-js-class="flex-wrap-nowrap" type="button">nowrap</button>
-						<button class="button" data-js-class="flex-wrap-flex-wrap" type="button">flex-wrap</button>
+						<button class="button" data-js-class="flex-wrap-flex-wrap" type="button">wrap</button>
 						<button class="button" data-js-class="flex-wrap-wrap-reverse" type="button">wrap-reverse</button>
 
 						<div class="directionality align-right">
