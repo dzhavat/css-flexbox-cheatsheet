@@ -468,6 +468,7 @@ export function getWebviewContent(
 
 				<ul>
 					<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener">A Complete Guide to Flexbox</a></li>
+					<li><a href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/" target="_blank" rel="noopener">An Interactive Guide to Flexbox</a></li>
 					<li><a href="https://www.samanthaming.com/flexbox30/" target="_blank" rel="noopener">Learn Flexbox with 30 Code Tidbits</a></li>
 					<li><a href="https://flexboxfroggy.com/" target="_blank" rel="noopener">Flexbox Froggy</a></li>
 					<li><a href="https://flexboxzombies.com/p/flexbox-zombies" target="_blank" rel="noopener">Flexbox Zombies</a></li>
