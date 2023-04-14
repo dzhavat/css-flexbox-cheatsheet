@@ -27,7 +27,7 @@ export function getWebviewContent(
 			<div class="container">
 				<h1>CSS Flexbox Cheatsheet</h1>
 
-				<h2>Settings</h2>
+				<h2>اعدادات</h2>
 
 				<div class="directionality-settings">
 					<p>Select the <i>directionality</i> to be used in the interactive playgrounds. (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir">Learn more</a>)</p>
