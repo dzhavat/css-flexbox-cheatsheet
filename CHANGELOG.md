@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.3.3](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.3.2...3.3.3) - 2023-06-10
+
+### Changed
+
+- Set the minimum supported VS Code version to 1.75.0
+- Remove unnecessary activation event
+- Update dependencies
+
 ## [3.3.2](https://github.com/dzhavat/css-flexbox-cheatsheet/compare/3.3.1...3.3.2) - 2023-01-04
 
 ### Added
