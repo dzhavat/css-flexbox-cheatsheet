@@ -29,7 +29,6 @@
     ]
   },
   "activationEvents": [
-    "onCommand:flexbox.cheatsheet",
     "onLanguage:css",
     "onLanguage:less",
     "onLanguage:sass",
